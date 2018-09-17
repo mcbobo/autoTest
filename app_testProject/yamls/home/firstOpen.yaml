@@ -1,0 +1,30 @@
+testinfo:
+    - id: test001
+      title: 第一次启动app
+      info: 打开app
+testcase:
+    - element_info: com.tencent.mm:id/d1w
+      find_type: id
+      operate_type: click
+      info: 登录
+#    - element_info: people.png
+#      find_type: img
+#      operate_type: tap
+#      info: 点击通讯录
+#    - element_info: my.png
+#      find_type: img
+#      index: 0
+#      operate_type: tap
+#      info: 点击我
+#    - element_info: com.huawei.works.knowledge:id/vdr_fav
+#      find_type: id
+#      is_webview: 2 # 切换到native
+#      operate_type: click
+#      info: 点击取消收藏按钮
+
+check:
+    - element_info: com.tencent.mm:id/hx
+#    - element_info: people.png
+      find_type: id
+      check: default_check
+      info: 打开页面成功
