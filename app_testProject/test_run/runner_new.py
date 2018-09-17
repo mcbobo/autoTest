@@ -72,10 +72,11 @@ if __name__ == '__main__':
     from common.devices import devices
 
     kill_adb()
+    app_path = {"app": r'D:\dr.fone3.2.0.apk'}
 
     devicess = devices()
     if len(devicess) > 0:
-        mk_file()
+        mk_file(**app_path)
         # l_devices = []
         # for dev in devicess:
         #     app = {}

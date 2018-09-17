@@ -88,46 +88,12 @@ class AndroidDebugBridge(object):
         # print(result[4])
         return result[4]
 
-    @staticmethod
-    def _app_info(apk_path, findstr=''):
-        cmd = "aapt dump badging " + apk_path + " " + findstr
-        output = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.read()
-        return output.decode('utf-8')
-
-    # 根据包路径得到包版本名称
-    def get_app_info(self, apk_path):
-        app = {}
-        output = self._app_info(apk_path)
-        match = re.compile("package: name='(\S+)' versionCode='(\d+)' versionName='(\S+)'").match(output)
-        if not match:
-            print(output)
-            raise Exception("can't get packageinfo")
-
-        app["packagename"] = match.group(1)  # 包名
-        app["versionCode"] = match.group(2)  # 版本号
-        app["versionName"] = match.group(3)  # 版本名称
-        return app
-
-    # 包icon
-    def get_app_icon(self, apk_path):
-        findstr = "| findstr application-icon-120"
-        output = self._app_info(apk_path, findstr)
-        # iconPath = output.split(':')[1][1:-3]
-        iconPath = output[22:len(output) - 3]
-
-        zip = zipfile.ZipFile(apk_path)
-        iconData = zip.read(iconPath)
-        #
-        # with open(r'D:/test.png', 'w+b') as saveIconFile:
-        #     saveIconFile.write(iconData)
-        return iconData
-
 
 if __name__ == '__main__':
     # reuslt = AndroidDebugBridge().attached_devices()
     # print(reuslt)
 
     # print(os.popen("adb devices", 'r').readline())
-    path = r'D:\Download\BaiduNetdiskDownload\dr.fone3.2.0.apk'
-    t = AndroidDebugBridge().get_app_icon(path)
-    print(t)
+    path = r'D:\dr.fone3.2.0.apk'
+    # t = AndroidDebugBridge().get_app_info(path)
+    # print(t)

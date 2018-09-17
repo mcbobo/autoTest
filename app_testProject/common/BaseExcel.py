@@ -39,17 +39,18 @@ class OperateReport:
         define_format_H2.set_color("#ffffff")
 
         worksheet.merge_range('A1:E1', '测试报告总概况', define_format_H1)
-        worksheet.merge_range('A2:E2', 'WebLink知识测试概括', define_format_H2)
+        worksheet.merge_range('A2:E2', '%s_测试概括' % data["appName"], define_format_H2)
         # worksheet.merge_range('A7:C7', '设备通过概括', define_format_H2)
 
-        _write_center(worksheet, "A3", 'versionCode', self.wd)
-        _write_center(worksheet, "A4", 'versionName', self.wd)
-        _write_center(worksheet, "A5", 'packingTime', self.wd)
+        _write_center(worksheet, "A3", '包名', self.wd)
+        # worksheet.insert_image("A3", data["icon"], {'x_scale': 0.1, 'y_scale': 0.1, 'border': 1})
+        _write_center(worksheet, "A4", '版本号', self.wd)
+        _write_center(worksheet, "A5", '版本名称', self.wd)
         _write_center(worksheet, "A6", '测试日期', self.wd)
 
-        _write_center(worksheet, "B3", data['versionCode'], self.wd)
-        _write_center(worksheet, "B4", data['versionName'], self.wd)
-        _write_center(worksheet, "B5", data['packingTime'], self.wd)
+        _write_center(worksheet, "B3", data['packageName'], self.wd)
+        _write_center(worksheet, "B4", data['versionCode'], self.wd)
+        _write_center(worksheet, "B5", data['versionName'], self.wd)
         _write_center(worksheet, "B6", data['testDate'], self.wd)
 
         _write_center(worksheet, "C3", "用例总数", self.wd)
@@ -135,8 +136,7 @@ class OperateReport:
                 _write_center(worksheet, "J" + str(temp), "", self.wd)
                 worksheet.set_row(temp, 30)
             else:
-                worksheet.insert_image('J' + str(temp), item["img"],
-                                       {'x_scale': 0.1, 'y_scale': 0.1, 'border': 1})
+                worksheet.insert_image('J' + str(temp), item["img"], {'x_scale': 0.1, 'y_scale': 0.1, 'border': 1})
                 worksheet.set_row(temp - 1, 110)
             temp = temp + 1
 

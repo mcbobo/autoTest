@@ -1,7 +1,7 @@
 platformName: Android
 #模拟器
 platformVersion: 5.1.1
-deviceName: 127.0.0.1:21503
+#deviceName: 127.0.0.1:21503
 
 #mx4真机
 #platformVersion: 5.1
@@ -9,11 +9,11 @@ deviceName: 127.0.0.1:21503
 #deviceName: MX4
 
 appname: weixin.apk
-noReset: True
-unicodeKeyboard: True
-resetKeyboard: True
+#noReset: True
+#unicodeKeyboard: True
+#resetKeyboard: True
 
 appPackage: com.tencent.mm
 appActivity: com.tencent.mm.ui.LauncherUI
 ip: 127.0.0.1
-port: 4723
+#port: 4723
