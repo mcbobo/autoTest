@@ -1,0 +1,11 @@
+2018-09-18 17:36:04,986  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/d1w_click          ----
+2018-09-18 17:36:06,003  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:36:06,091  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:36:06,155  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:36:06,224  - INFO - ----  testFirstOpen_失败重连        ----
+2018-09-18 17:36:08,501  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/d1w_click          ----
+2018-09-18 17:36:09,525  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:36:09,617  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:36:09,678  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:36:09,816  - INFO - [CheckPoint_1]: testFirstOpen_用例失败重连过一次，失败原因:==检查点_对比数据失败，当前取到到数据为:com.tencent.mm:id/hx,历史取到数据为:请填写手机号
+==检查点_对比数据失败，当前取到到数据为:com.tencent.mm:id/hx,历史取到数据为:请填写手机号: NG

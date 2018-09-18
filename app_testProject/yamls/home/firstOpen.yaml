@@ -7,6 +7,10 @@ testcase:
       find_type: id
       operate_type: click
       info: 登录
+    - element_info: com.tencent.mm:id/hx
+      find_type: id
+      operate_type: get_value
+      info: 输入账号
 #    - element_info: people.png
 #      find_type: img
 #      operate_type: tap
@@ -24,7 +28,7 @@ testcase:
 
 check:
     - element_info: com.tencent.mm:id/hx
-#    - element_info: people.png
       find_type: id
-      check: default_check
+      operate_type: get_value
+      check: compare
       info: 打开页面成功

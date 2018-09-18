@@ -1,0 +1,11 @@
+2018-09-18 17:40:02,879  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/d1w_click          ----
+2018-09-18 17:40:03,822  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:40:03,859  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:40:03,959  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:40:04,019  - INFO - ----  testFirstOpen_失败重连        ----
+2018-09-18 17:40:06,421  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/d1w_click          ----
+2018-09-18 17:40:07,332  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:40:07,380  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:40:07,617  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 17:40:07,770  - INFO - [CheckPoint_1]: testFirstOpen_用例失败重连过一次，失败原因:==检查点_打开页面成功失败_com.tencent.mm:id/hx依然在页面==
+==检查点_打开页面成功失败_com.tencent.mm:id/hx依然在页面==: NG

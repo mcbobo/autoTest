@@ -17,7 +17,7 @@ def mk_file(**kwargs):
     data = read(PATH("../Log/" + Element.INFO_FILE))
     apk = ApkInfo(kwargs['app'])
     data["appName"] = apk.getApkName()
-    data["icon"] = ApkInfo(kwargs['app']).get_app_icon()
+    # data["icon"] = ApkInfo(kwargs['app']).get_app_icon()
     # data["appVersion"] = apkInfo.getApkBaseInfo()[2]
     info = apk.getApkBaseInfo()
     data["versionCode"] = info[2]

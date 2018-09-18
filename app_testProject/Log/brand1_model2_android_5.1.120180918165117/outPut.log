@@ -1,0 +1,4 @@
+2018-09-18 16:51:19,836  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/d1w_click          ----
+2018-09-18 16:51:20,962  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 16:51:21,065  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-18 16:51:21,250  - INFO - [CheckPoint_1]: testFirstOpen_ : OK

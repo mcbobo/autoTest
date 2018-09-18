@@ -68,8 +68,10 @@ class PagesObjects:
 
         return True
 
-    def checkPoint(self, kwargs={}):
-        result = self.check(kwargs)
+    # def checkPoint(self, kwargs={}):
+    #     result = self.check(kwargs)
+    def checkPoint(self):
+        result = self.check()
         if self.test_msg[0] is not False:  # 如果用例编写正确
             if result is not True and be.RE_CONNECT:
                 self.msg = "用例失败重连过一次，失败原因:" + self.testInfo[0]["msg"]
@@ -80,7 +82,8 @@ class PagesObjects:
                 self.get_value = []
                 self.is_get = False
                 self.operate()
-                result = self.check(kwargs)
+                # result = self.check(kwargs)
+                result = self.check()
                 self.testInfo[0]["msg"] = self.msg
             self.operateElement.switchToNative()
 
@@ -89,7 +92,7 @@ class PagesObjects:
                           testCase=self.testCase,
                           testCheck=self.testcheck)
 
-    '''
+    """
     检查点
     caseName:测试用例函数名 用作统计
     logTest： 日志记录
@@ -98,9 +101,10 @@ class PagesObjects:
     toast: 表示提示框检查点
     contrary_getval: 相反值检查点，如果对比成功，说明失败
     check_point: 自定义检查结果    
-    '''
+    """
 
-    def check(self, kwargs):
+    # def check(self, kwargs):
+    def check(self):
         result = True
         m_s_g = self.msg + "\n" if self.msg != "" else ""
         # 如果有重跑机制，成功后会默认把日志传进来
@@ -111,6 +115,7 @@ class PagesObjects:
 
         if self.isOperate:
             for item in self.testcheck:
+                kwargs = item
                 if kwargs.get("check", be.DEFAULT_CHECK) == be.TOAST:
                     result = \
                         self.operateElement.toast(item["element_info"], testInfo=self.testInfo, logTest=self.logTest)[
@@ -141,7 +146,7 @@ class PagesObjects:
                     result = False
                     break
                 # 检查点关键字contrary_getval: 相反值检查点，如果对比成功，说明失败
-                if kwargs.get("check", be.DEFAULT_CHECK) == be.CONTRARY_GETVAL and self.is_get and resp["result"] \
+                if kwargs.get("check", be.DEFAULT_CHECK) == be.CONTRARY_GETVAL and self.is_get and resp["text"] \
                         in self.get_value:
                     m = get_error(
                         {"type": be.CONTRARY_GETVAL, "current": item["element_info"], "history": resp["text"]})
