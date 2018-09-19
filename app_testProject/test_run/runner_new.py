@@ -5,17 +5,16 @@ sys.path.append("..")
 import platform
 from common.BaseAndroidPhone import *
 from common.BaseAdb import *
-from common.BaseRunner import ParametrizedTestCase
-from test_case.HomeTest import HomeTest
 from common.BaseAppiumServer import AppiumServer
 from multiprocessing import Pool
-import unittest
 from common.BaseInit import init, mk_file
 from common.BaseStatistics import countDate, writeExcel, countSumDevices
 from common.BasePickle import *
 from datetime import datetime
 from common.BaseApk import ApkInfo
+from common.devices import devices
 from test_case.case_manager import CaseManager
+from common.BaseEmail import latest_report, send_mail, get_csv_data
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -69,30 +68,38 @@ def runnerCaseApp(devices):
 
 
 if __name__ == '__main__':
-    from common.devices import devices
-
-    kill_adb()
     app_path = {"app": r'D:\dr.fone3.2.0.apk'}
-
     devicess = devices()
+    if not devices():
+        kill_adb()
+        devicess = devices()
     if len(devicess) > 0:
-        mk_file(**app_path)
-        # l_devices = []
-        # for dev in devicess:
-        #     app = {}
-        #     app["devices"] = dev
-        #     init(dev)
-        #     app["port"] = str(random.randint(4700, 4900))
-        #     app["bport"] = str(random.randint(4700, 4900))
-        #     app["systemPort"] = str(random.randint(4700, 4900))
-        #     app["app"] = PATH("../app/com.ximalaya.ting.android.apk")  # 测试的app路径,喜马拉雅app
+        # mk_file(**devicess[0])
+        # # l_devices = []
+        # # for dev in devicess:
+        # #     app = {}
+        # #     app["devices"] = dev
+        # #     init(dev)
+        # #     app["port"] = str(random.randint(4700, 4900))
+        # #     app["bport"] = str(random.randint(4700, 4900))
+        # #     app["systemPort"] = str(random.randint(4700, 4900))
+        # #     app["app"] = PATH("../app/com.ximalaya.ting.android.apk")  # 测试的app路径,喜马拉雅app
+        # #
+        # #     l_devices.append(app)
         #
-        #     l_devices.append(app)
+        # appium_server = AppiumServer(devicess)
+        # appium_server.start_server()
+        # runnerPool(devicess)
+        # writeExcel()
+        # appium_server.stop_server(devicess)
 
-        appium_server = AppiumServer(devicess)
-        appium_server.start_server()
-        runnerPool(devicess)
-        writeExcel()
-        appium_server.stop_server(devicess)
+        # 发送测试报告
+        # report_dir = "../Report"
+        # log_dir = latest_report("../Log")
+        # text_pah = os.path.join(log_dir, "outPut.log")
+        text = "测试"
+        user = get_csv_data(1)
+        att_path = latest_report()
+        send_mail(user[0], user[1], user[2], text, att_path)
     else:
         print("没有可用的安卓设备")

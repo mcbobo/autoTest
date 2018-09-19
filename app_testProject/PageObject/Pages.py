@@ -100,6 +100,7 @@ class PagesObjects:
     contrary：相反检查点，传1表示如果检查元素存在就说明失败
     toast: 表示提示框检查点
     contrary_getval: 相反值检查点，如果对比成功，说明失败
+    compare: 相同值检查点，如果对比失败，说明失败
     check_point: 自定义检查结果    
     """
 
