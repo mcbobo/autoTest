@@ -14,7 +14,7 @@ from datetime import datetime
 from common.BaseApk import ApkInfo
 from common.devices import devices
 from test_case.case_manager import CaseManager
-from common.BaseEmail import latest_report, send_mail, get_csv_data
+from common.BaseEmail import *
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -73,8 +73,9 @@ if __name__ == '__main__':
     if not devices():
         kill_adb()
         devicess = devices()
-    if len(devicess) > 0:
-        # mk_file(**devicess[0])
+    length = len(devicess)
+    if length > 0:
+        mk_file(**devicess[0])
         # # l_devices = []
         # # for dev in devicess:
         # #     app = {}
@@ -87,19 +88,16 @@ if __name__ == '__main__':
         # #
         # #     l_devices.append(app)
         #
-        # appium_server = AppiumServer(devicess)
-        # appium_server.start_server()
-        # runnerPool(devicess)
-        # writeExcel()
-        # appium_server.stop_server(devicess)
+        appium_server = AppiumServer(devicess)
+        appium_server.start_server()
+        runnerPool(devicess)
+        writeExcel()
+        appium_server.stop_server(devicess)
 
         # 发送测试报告
-        # report_dir = "../Report"
-        # log_dir = latest_report("../Log")
-        # text_pah = os.path.join(log_dir, "outPut.log")
-        text = "测试"
-        user = get_csv_data(1)
-        att_path = latest_report()
-        send_mail(user[0], user[1], user[2], text, att_path)
+        # text = latest_log(length)
+        # att_path = latest_report()
+        # user = get_csv_data(1)
+        # send_mail(user[0], user[1], user[2], text, att_path)
     else:
         print("没有可用的安卓设备")

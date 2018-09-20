@@ -3,6 +3,7 @@ import os
 import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
+from common.BaseFile import read_data
 
 # csv_dir = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'data', 'account.csv')
 csv_dir = '../data/mail_user.csv'
@@ -26,6 +27,22 @@ def get_csv_data(line, csv_file=csv_dir):
         for index, row in enumerate(reader, 1):
             if index == line:
                 return row
+
+
+# 获取最新的日志
+def latest_log(length=1):
+    data = ''
+    report_dir = os.path.join(os.path.dirname(__file__), '../Log')
+    lists = os.listdir(report_dir)
+    # 按时间顺序对该目录文件夹下面的文件进行排序
+    lists.sort(key=lambda fn: os.path.getctime(report_dir + '\\' + fn))
+    for dev in range(length):
+        path = os.path.join(report_dir, lists[-(dev + 1)], "outPut.log")
+        data += "<h3>%s_log:</h3>" % lists[-(dev + 1)] + "\n"
+        for line in read_data(path):
+            data += "<p>%s</p>" % line.strip() + "\n"
+    print("all log:%s" % data)
+    return data
 
 
 # 发送邮件
@@ -72,6 +89,6 @@ if __name__ == '__main__':
     rec = "742413096@qq.com"
     text = "测试"
     p = r"D:\1.png"
-    user = get_csv_data(1)
-    # att_path = latest_report()
+    # user = get_csv_data(1)
+    att_path = latest_log(2)
     # send_mail(user[0], user[1], user[2], text, att_path)

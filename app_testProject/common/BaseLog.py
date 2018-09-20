@@ -174,4 +174,3 @@ if __name__ == "__main__":
     # logTest.buildStartLine("11111111111111111111111")
     resultPath = PATH("../log")
     print(resultPath)
-
