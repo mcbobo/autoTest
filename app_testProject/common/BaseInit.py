@@ -10,11 +10,11 @@ PATH = lambda p: os.path.abspath(
 
 def mk_file(**kwargs):
     destroy()
-    mkdir_file(PATH("../Log/" + Element.INFO_FILE))
-    mkdir_file(PATH("../Log/" + Element.SUM_FILE))
-    mkdir_file(PATH("../Log/" + Element.DEVICES_FILE))
+    mkdir_file(PATH("../data/" + Element.INFO_FILE))
+    mkdir_file(PATH("../data/" + Element.SUM_FILE))
+    mkdir_file(PATH("../data/" + Element.DEVICES_FILE))
 
-    data = read(PATH("../Log/" + Element.INFO_FILE))
+    data = read(PATH("../data/" + Element.INFO_FILE))
     apk = ApkInfo(kwargs['app'])
     data["appName"] = apk.getApkName()
     # data["icon"] = ApkInfo(kwargs['app']).get_app_icon()
@@ -26,7 +26,7 @@ def mk_file(**kwargs):
     data["sum"] = 0
     data["pass"] = 0
     data["fail"] = 0
-    write(data=data, path=PATH("../Log/" + Element.SUM_FILE))
+    write(data=data, path=PATH("../data/" + Element.SUM_FILE))
 
 
 def init(devices):
@@ -46,9 +46,9 @@ def init(devices):
 
 
 def destroy():
-    remove_file(PATH("../Log/" + Element.INFO_FILE))
-    remove_file(PATH("../Log/" + Element.SUM_FILE))
-    remove_file(PATH("../Log/" + Element.DEVICES_FILE))
+    remove_file(PATH("../data/" + Element.INFO_FILE))
+    remove_file(PATH("../data/" + Element.SUM_FILE))
+    remove_file(PATH("../data/" + Element.DEVICES_FILE))
 
 
 if __name__ == '__main__':

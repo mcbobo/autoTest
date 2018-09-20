@@ -6,7 +6,7 @@ import os
 
 CON_LOG = '../config/log.conf'
 logging.config.fileConfig(CON_LOG)
-logging = logging.getLogger()
+logging = logging.getdatager()
 
 
 def appium_desired():
@@ -44,7 +44,7 @@ if __name__ == '__main__':
     PATH = lambda p: os.path.abspath(
         os.path.join(os.path.dirname(__file__), p)
     )
-    _read = readInfo(PATH("../Log/" + Element.INFO_FILE))
+    _read = readInfo(PATH("../data/" + Element.INFO_FILE))
     # devices = '127.0.0.1:21513'
     # result = 0
     # if _read:

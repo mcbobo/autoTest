@@ -95,9 +95,9 @@ if __name__ == '__main__':
         appium_server.stop_server(devicess)
 
         # 发送测试报告
-        # text = latest_log(length)
-        # att_path = latest_report()
-        # user = get_csv_data(1)
-        # send_mail(user[0], user[1], user[2], text, att_path)
+        text = latest_log(length)
+        att_path = latest_report()
+        user = get_csv_data(1)
+        send_mail(user[0], user[1], user[2], text, att_path)
     else:
         print("没有可用的安卓设备")

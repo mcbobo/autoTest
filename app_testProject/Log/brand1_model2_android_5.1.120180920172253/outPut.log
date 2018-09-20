@@ -1,0 +1,3 @@
+2018-09-20 17:23:15,806  - INFO - ----  testFirstOpen_失败重连        ----
+2018-09-20 17:23:38,561  - INFO - [CheckPoint_1]: testFirstOpen_用例失败重连过一次，失败原因:执行过程中失败，请检查元素是否存在com.tencent.mm:id/d1w, 
+执行过程中失败，请检查元素是否存在com.tencent.mm:id/d1w, : NG
