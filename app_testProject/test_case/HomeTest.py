@@ -1,7 +1,6 @@
 import os
 import sys
 import unittest
-from common.BaseRunner import ParametrizedTestCase
 from PageObject.Home.FirstOpenPage import FirstOpenPage
 from common.BaseYaml import getMultiYam
 from common.BaseSetupDown_new import UpDown
@@ -18,6 +17,12 @@ class HomeTest(UpDown):
         casename = sys._getframe().f_code.co_name
         path = PATH('../yamls/home/firstOpen.yaml')
         self.template(casename, path)
+
+    # @unittest.skipUnless(result, 'skip not specified device')
+    # def testLogin(self):
+    #     casename = sys._getframe().f_code.co_name
+    #     path = PATH('../yamls/home/login.yaml')
+    #     self.template(casename, path)
 
     @unittest.skip('all')
     def testLogin(self):

@@ -8,6 +8,7 @@ from common.BaseElementEnmu import Element
 import platform
 import time
 from common.BaseYaml import getYam
+from common.BasePickle import write
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)

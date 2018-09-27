@@ -31,6 +31,7 @@ class PagesObjects:
         self.testInfo = self.test_msg[1]["testinfo"]
         self.testCase = self.test_msg[1]["testcase"]
         self.testcheck = self.test_msg[1]["check"]
+        # self.runid = self.test_msg[1].get("runid", True)
         self.device = kwargs["device"]
         self.logTest = kwargs["logTest"]
         self.caseName = kwargs["caseName"]

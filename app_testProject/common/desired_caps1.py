@@ -6,7 +6,9 @@ import os
 
 CON_LOG = '../config/log.conf'
 logging.config.fileConfig(CON_LOG)
-logging = logging.getdatager()
+
+
+# logging = logging.getdatager()
 
 
 def appium_desired():
@@ -38,20 +40,4 @@ def appium_desired():
 
 
 if __name__ == '__main__':
-    from common.BasePickle import *
-    from common.BaseElementEnmu import Element
-
-    PATH = lambda p: os.path.abspath(
-        os.path.join(os.path.dirname(__file__), p)
-    )
-    _read = readInfo(PATH("../data/" + Element.INFO_FILE))
-    # devices = '127.0.0.1:21513'
-    # result = 0
-    # if _read:
-    #     for item in _read:
-    #         if item["device"] == devices:  # 本地已经存在该设备记录
-    #             if result:
-    #                 item["pass"] = item["pass"] + 1
-    #             else:
-    #                 item["fail"] = item["fail"] + 1
-    # print(_read)
+    pass

@@ -55,12 +55,10 @@ if __name__ == '__main__':
         os.path.join(os.path.dirname(__file__), p)
     )
     # print(PATH("../yaml/home/firstOpen.yaml"))
-    t1 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\firstOpen.yaml'
+    t1 = r'D:\soft\pyc\auto_appium\app_testProject\yamls\home\firstOpen.yaml'
     t2 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\login.yaml'
     # print(getMultiYam(PATH("../yamls/home/firstOpen.yaml")))
-    testinfo = getMultiYam(t1)[1]["testinfo"]
-    print(testinfo)
-    testinfo[0]["msg"] = 'test'
+    testinfo = getMultiYam(t1)[1].get("runid", True)
     print(testinfo)
 
     # port = str(random.randint(4700, 4900))

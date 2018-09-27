@@ -88,11 +88,11 @@ if __name__ == '__main__':
         # #
         # #     l_devices.append(app)
         #
-        appium_server = AppiumServer(devicess)
-        appium_server.start_server()
+        #appium_server = AppiumServer(devicess)
+        #appium_server.start_server()
         runnerPool(devicess)
         writeExcel()
-        appium_server.stop_server(devicess)
+        #appium_server.stop_server(devicess)
 
         # 发送测试报告
         text = latest_log(length)
