@@ -21,10 +21,20 @@ class UpDown(pt):
         data = getMultiYam(*args)
         app = {"logTest": self.logTest, "driver": self.driver, "data": data,
                "device": self.devicesName, "caseName": case_name}
+        test_device = data[1].get("testDevice", False)
 
-        page = FirstOpenPage(app)
-        page.operate()
-        page.checkPoint()
+        if test_device:
+            if test_device == app["device"]:
+                page = FirstOpenPage(app)
+                page.operate()
+                page.checkPoint()
+            else:
+                print("非指定执行设备")
+                pass
+        else:
+            page = FirstOpenPage(app)
+            page.operate()
+            page.checkPoint()
 
     def allCase(self, rootdir):
         # 遍历文件夹所有文件，run全部用例

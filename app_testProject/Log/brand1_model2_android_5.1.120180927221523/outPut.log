@@ -1,0 +1,7 @@
+2018-09-27 22:15:47,375  - INFO - ----  testDevice_失败重连        ----
+2018-09-27 22:16:10,497  - INFO - [CheckPoint_1]: testDevice_用例失败重连过一次，失败原因:执行过程中失败，请检查元素是否存在my.png, 
+执行过程中失败，请检查元素是否存在my.png, : NG
+2018-09-27 22:16:14,468  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/d1w_click          ----
+2018-09-27 22:16:15,749  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-27 22:16:15,786  - INFO - ----  test001_第一次启动app_com.tencent.mm:id/hx_get_value          ----
+2018-09-27 22:16:15,900  - INFO - [CheckPoint_2]: testFirstOpen_ : OK

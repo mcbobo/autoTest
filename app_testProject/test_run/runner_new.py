@@ -88,16 +88,16 @@ if __name__ == '__main__':
         # #
         # #     l_devices.append(app)
         #
-        #appium_server = AppiumServer(devicess)
-        #appium_server.start_server()
+        appium_server = AppiumServer(devicess)
+        appium_server.start_server()
         runnerPool(devicess)
         writeExcel()
-        #appium_server.stop_server(devicess)
+        appium_server.stop_server(devicess)
 
         # 发送测试报告
-        text = latest_log(length)
-        att_path = latest_report()
-        user = get_csv_data(1)
-        send_mail(user[0], user[1], user[2], text, att_path)
+        # text = latest_log(length)
+        # att_path = latest_report()
+        # user = get_csv_data(1)
+        # send_mail(user[0], user[1], user[2], text, att_path)
     else:
         print("没有可用的安卓设备")

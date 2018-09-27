@@ -2,16 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc36a3b7-fd6b-4f47-a8e3-7106aafcc135" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" afterPath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/app/weixin.apk" afterPath="$PROJECT_DIR$/app_testProject/app/weixin.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/info.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/info.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" afterPath="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseRunner.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseRunner.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/desired_caps1.py" afterPath="$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/sum.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/sum.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" afterPath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" afterPath="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/home/login.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/home/login.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -23,17 +23,15 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5097529">
+    <splitter split-orientation="horizontal" split-proportion="0.5">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="FirstOpenPage.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py">
+          <file leaf-file-name="Pages.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#0#34#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="152">
+                  <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -41,23 +39,9 @@
           <file leaf-file-name="HomeTest.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="133">
-                  <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-                  <folding>
-                    <element signature="e#0#9#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BaseRunner.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseRunner.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="190">
-                  <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-                  <folding>
-                    <element signature="e#24#72#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="285">
+                  <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -65,8 +49,8 @@
           <file leaf-file-name="BaseSetupDown_new.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="57">
-                  <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                <state relative-caret-position="342">
+                  <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
                   <folding />
                 </state>
               </provider>
@@ -75,51 +59,23 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
+        <leaf>
+          <file leaf-file-name="BaseYaml.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="340">
-                  <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-                  <folding>
-                    <element signature="e#654#857#0" expanded="false" />
-                    <element signature="e#959#1618#0" expanded="false" />
-                    <element signature="e#2490#2508#0" expanded="false" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="BaseApk.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseApk.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+                <state relative-caret-position="345">
+                  <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="case_manager.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/test_case/case_manager.py">
+          <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="418">
-                  <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-                  <folding>
-                    <element signature="e#0#15#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="devices.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="95">
-                  <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-                  <folding>
-                    <element signature="e#15#24#0" expanded="true" />
-                  </folding>
+                <state relative-caret-position="573">
+                  <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -184,11 +140,12 @@
         <option value="$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseInit.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseStatistics.py" />
-        <option value="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
-        <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
-        <option value="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseRunner.py" />
+        <option value="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
+        <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
+        <option value="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
+        <option value="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
         <option value="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
       </list>
     </option>
@@ -214,26 +171,26 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -243,11 +200,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -261,11 +218,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -279,33 +236,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_testProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -319,11 +254,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
+              <option name="myItemId" value="autoTest" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -339,31 +274,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="auto_appium" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_testProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="common" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="D:/OneKeyBak/backup/desktop/ai" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -542,8 +459,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.runner_new" />
-        <item index="1" class="java.lang.String" itemvalue="Python.desired_caps1" />
-        <item index="2" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="2" class="java.lang.String" itemvalue="Python.desired_caps1" />
         <item index="3" class="java.lang.String" itemvalue="Python.BasePickle" />
         <item index="4" class="java.lang.String" itemvalue="Python.BaseEmail" />
       </list>
@@ -625,267 +542,42 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1387">
-          <caret line="104" column="26" lean-forward="true" selection-start-line="104" selection-start-column="26" selection-end-line="104" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#654#857#0" expanded="false" />
-            <element signature="e#959#1618#0" expanded="false" />
-            <element signature="e#2490#2508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/run.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runTest.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#654#857#0" expanded="false" />
-            <element signature="e#959#1618#0" expanded="false" />
-            <element signature="e#2490#2508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="22" column="29" lean-forward="false" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="779">
-          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1539">
-          <caret line="81" column="22" lean-forward="false" selection-start-line="81" selection-start-column="22" selection-end-line="81" selection-end-column="22" />
-          <folding>
-            <element signature="e#654#857#0" expanded="false" />
-            <element signature="e#959#1618#0" expanded="false" />
-            <element signature="e#2490#2508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseInit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="19" column="58" lean-forward="false" selection-start-line="19" selection-start-column="58" selection-end-line="19" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseLog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2983">
-          <caret line="174" column="31" lean-forward="false" selection-start-line="174" selection-start-column="31" selection-end-line="174" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2204">
-          <caret line="163" column="47" lean-forward="false" selection-start-line="163" selection-start-column="47" selection-end-line="163" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="19" column="16" lean-forward="false" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="24" column="24" lean-forward="false" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="32" lean-forward="false" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1159">
-          <caret line="63" column="25" lean-forward="false" selection-start-line="63" selection-start-column="25" selection-end-line="63" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" column="4" lean-forward="false" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="75" column="0" lean-forward="false" selection-start-line="75" selection-start-column="0" selection-end-line="75" selection-end-column="0" />
-          <folding>
-            <element signature="e#654#857#0" expanded="false" />
-            <element signature="e#959#1618#0" expanded="false" />
-            <element signature="e#2490#2508#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/CollectSwipeDellPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1881">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/CardsSortPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1938">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/HistorySwipeDellPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="67" column="28" lean-forward="true" selection-start-line="67" selection-start-column="28" selection-end-line="67" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseError.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="20" column="28" lean-forward="true" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseExcel.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="104" column="32" lean-forward="true" selection-start-line="104" selection-start-column="32" selection-end-line="104" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/SumResult.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="59" lean-forward="true" selection-start-line="10" selection-start-column="59" selection-end-line="10" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseInit.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseLog.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseExcel.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/CollectSwipeDellPage.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/CardsSortPage.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/HistorySwipeDellPage.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseError.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseExcel.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/SumResult.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/appium_start.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runTest.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseIosCommand.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="38" column="23" lean-forward="true" selection-start-line="38" selection-start-column="23" selection-end-line="38" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/config/log.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="25" column="14" lean-forward="false" selection-start-line="25" selection-start-column="14" selection-end-line="25" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseLog.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="17" column="31" lean-forward="false" selection-start-line="17" selection-start-column="31" selection-end-line="17" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseFile.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="361">
-          <caret line="20" column="29" lean-forward="true" selection-start-line="20" selection-start-column="29" selection-end-line="20" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseInit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="48" column="51" lean-forward="false" selection-start-line="48" selection-start-column="42" selection-end-line="48" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="298">
-          <caret line="60" column="52" lean-forward="true" selection-start-line="60" selection-start-column="52" selection-end-line="60" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="37" column="43" lean-forward="false" selection-start-line="37" selection-start-column="38" selection-end-line="37" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="30" lean-forward="false" selection-start-line="21" selection-start-column="30" selection-end-line="21" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="564">
-          <caret line="42" column="13" lean-forward="false" selection-start-line="42" selection-start-column="4" selection-end-line="42" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/test_case/test_login.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-114">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/run.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseIosCommand.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/config/log.conf" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseLog.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseFile.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseInit.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/test_case/test_login.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/unittest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="329">
@@ -894,116 +586,59 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/desired_caps1.py">
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseOperate.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseStatistics.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/case_manager.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseRunner.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseApk.py" />
+    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="42" column="8" lean-forward="true" selection-start-line="41" selection-start-column="26" selection-end-line="42" selection-end-column="8" />
+        <state relative-caret-position="475">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="15" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseOperate.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="854">
-          <caret line="86" column="8" lean-forward="false" selection-start-line="86" selection-start-column="8" selection-end-line="86" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseStatistics.py">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="152">
-          <caret line="65" column="10" lean-forward="false" selection-start-line="65" selection-start-column="10" selection-end-line="65" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="29" column="4" lean-forward="false" selection-start-line="29" selection-start-column="4" selection-end-line="29" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/case_manager.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="22" column="55" lean-forward="false" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#15#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseRunner.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="35" lean-forward="true" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#72#0" expanded="true" />
-          </folding>
+          <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        <state relative-caret-position="342">
+          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py">
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" column="0" lean-forward="true" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#34#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" column="33" lean-forward="true" selection-start-line="7" selection-start-column="33" selection-end-line="7" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseApk.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+        <state relative-caret-position="285">
+          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="69" column="26" lean-forward="true" selection-start-line="69" selection-start-column="26" selection-end-line="69" selection-end-column="26" />
-          <folding>
-            <element signature="e#654#857#0" expanded="false" />
-            <element signature="e#959#1618#0" expanded="false" />
-            <element signature="e#2490#2508#0" expanded="false" />
-          </folding>
+        <state relative-caret-position="573">
+          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+          <folding />
         </state>
       </provider>
     </entry>

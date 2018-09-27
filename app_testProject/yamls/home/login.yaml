@@ -1,3 +1,4 @@
+testDevice: '127.0.0.1:21503'
 testinfo:
     - id: test002
       title: 登录
