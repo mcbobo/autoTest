@@ -13,14 +13,32 @@ PATH = lambda p: os.path.abspath(
 # class HomeTest(ParametrizedTestCase):
 class HomeTest(UpDown):
     # @unittest.skip('testFirstOpen')
-    def testFirstOpen(self):
+    def testStatus(self):
+        print("testStatus")
         casename = sys._getframe().f_code.co_name
-        path = PATH('../yamls/home/firstOpen.yaml')
+        path = PATH('../yamls/home/login_success.yaml')
         self.template(casename, path)
 
-    def testDevice(self):
+    def testLogining(self):
         casename = sys._getframe().f_code.co_name
         path = PATH('../yamls/home/login.yaml')
+        self.template(casename, path)
+
+    # def testReceive(self):
+    #     casename = sys._getframe().f_code.co_name
+    #     path = PATH('../yamls/receive.yaml')
+    #     self.template(casename, path)
+
+    @unittest.skip('img')
+    def testSendImg(self):
+        casename = sys._getframe().f_code.co_name
+        path = PATH('../yamls/sendImg.yaml')
+        self.template(casename, path)
+
+    @unittest.skip('receive img')
+    def testReceiveImg(self):
+        casename = sys._getframe().f_code.co_name
+        path = PATH('../yamls/receive_img.yaml')
         self.template(casename, path)
 
     @unittest.skip('all')

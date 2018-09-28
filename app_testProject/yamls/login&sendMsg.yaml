@@ -1,0 +1,55 @@
+testDevice: '127.0.0.1:215035'
+testinfo:
+    - id: test001
+      title: 登录&发送信息
+      info: 输入账号/密码，发送信息给另外的微信号
+testcase:
+  #  - element_info: com.tencent.mm:id/hx
+  #    find_type: id
+   #   operate_type: set_value
+    #  msg: 'zmjj123456'
+     # info: 输入密码
+   # - element_info: com.tencent.mm:id/bwn
+   #   find_type: id
+    #  operate_type: click
+#      msg: '13726221317'
+     # info: 登录
+    - element_info: search.png
+      find_type: img
+#     index: 0
+      operate_type: tap
+      info: 点击搜索
+    - element_info: com.tencent.mm:id/hx
+      find_type: id
+#     index: 0
+      operate_type: send_keys
+      msg: 'yedeyoushang'
+      info: 输入发送信息的微信号
+    - element_info: icon.png
+      find_type: img
+#     index: 0
+      operate_type: tap
+      info: 点击微信号
+    - element_info: com.tencent.mm:id/aa_
+      find_type: id
+#     index: 0
+      operate_type: send_keys
+      msg: 'hello'
+      info: 输入发送的信息
+    - element_info: send.png
+      find_type: img
+#     index: 0
+      operate_type: tap
+      info: 点击发送
+#    - element_info: com.huawei.works.knowledge:id/vdr_fav
+#      find_type: id
+#      is_webview: 2 # 切换到native
+#      operate_type: click
+#      info: 点击取消收藏按钮
+
+check:
+#    - element_info: com.tencent.mm:id/hx
+   - element_info: send_pass.png
+     find_type: img
+     check: default_check
+     info: 发送成功

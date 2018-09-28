@@ -1,0 +1,40 @@
+testinfo:
+    - id: test002
+      title: 接收信息
+      info: 打开微信，查看信息
+testcase:
+    - element_info: search.png
+      find_type: img
+      operate_type: tap
+      info: 点击搜索
+    - element_info: com.tencent.mm:id/hx
+      find_type: id
+#     index: 0
+      operate_type: send_keys
+      msg: 'blibli'
+      info: 输入发送信息的微信号
+    - element_info: receiver.png
+      find_type: img
+      is_time: 30
+      operate_type: tap
+      info: 点击发送方的头像
+#    - element_info: people.png
+#      find_type: img
+#      operate_type: tap
+#      info: 点击通讯录
+#    - element_info: my.png
+#      find_type: img
+#      index: 0
+#      operate_type: tap
+#      info: 点击我
+#    - element_info: com.huawei.works.knowledge:id/vdr_fav
+#      find_type: id
+#      is_webview: 2 # 切换到native
+#      operate_type: click
+#      info: 点击取消收藏按钮
+
+check:
+    - element_info: receive_msg.png
+      find_type: img
+      check: default_check
+      info: 接收信息成功

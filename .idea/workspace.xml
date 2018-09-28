@@ -2,16 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc36a3b7-fd6b-4f47-a8e3-7106aafcc135" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/Xiaomi_Redmi_android_7.1.220180920172009/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/Xiaomi_Redmi_android_7.1.220180920172257/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180920172004/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180920172253/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180920172253/第一次启动appCheckPoint_1_NG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927174037/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927174037/第一次启动appCheckPoint_1_NG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221227/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221523/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221523/登录CheckPoint_1_NG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221751/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221900/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221900/登录CheckPoint_1_NG.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_7.1.220180927174039/outPut.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/runlog.log" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" afterPath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/app/weixin.apk" afterPath="$PROJECT_DIR$/app_testProject/app/weixin.apk" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/info.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/info.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/sum.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/sum.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" afterPath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" afterPath="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/home/login.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/home/login.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -29,7 +42,7 @@
           <file leaf-file-name="Pages.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="152">
+                <state relative-caret-position="266">
                   <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
                   <folding />
                 </state>
@@ -39,8 +52,18 @@
           <file leaf-file-name="HomeTest.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="285">
-                  <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+                <state relative-caret-position="303">
+                  <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseElementEnmu.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="266">
+                  <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
                   <folding />
                 </state>
               </provider>
@@ -49,8 +72,8 @@
           <file leaf-file-name="BaseSetupDown_new.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+                <state relative-caret-position="646">
+                  <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
                   <folding />
                 </state>
               </provider>
@@ -59,22 +82,22 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="BaseYaml.py" pinned="false" current-in-tab="false">
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="BaseYaml.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
+                <state relative-caret-position="554">
+                  <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="573">
-                  <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+                <state relative-caret-position="350">
+                  <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
                   <folding />
                 </state>
               </provider>
@@ -86,20 +109,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>a't't</find>
-      <find>att</find>
-      <find>msgRoot</find>
-      <find>discover</find>
-      <find>o</find>
-      <find>out</find>
-      <find>outP</find>
-      <find>runlog.log</find>
-      <find>tongg</find>
-      <find>tong</find>
-      <find>ton</find>
-      <find>to</find>
-      <find>t</find>
-      <find>tong'g</find>
       <find>通过</find>
       <find>。</find>
       <find>。。</find>
@@ -116,6 +125,20 @@
       <find>info</find>
       <find>skip</find>
       <find>HomeTest</find>
+      <find>d</find>
+      <find>dai</find>
+      <find>da</find>
+      <find>den</find>
+      <find>deng</find>
+      <find>deng'd</find>
+      <find>deng'dai</find>
+      <find>等待</find>
+      <find>f</find>
+      <find>fan's</find>
+      <find>fan</find>
+      <find>fa</find>
+      <find>fa's't</find>
+      <find>fast</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -143,10 +166,10 @@
         <option value="$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseRunner.py" />
         <option value="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
-        <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
         <option value="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
         <option value="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
+        <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
       </list>
     </option>
   </component>
@@ -171,26 +194,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
+              <option name="myItemId" value="auto_appium" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
+              <option name="myItemId" value="auto_appium" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
+              <option name="myItemId" value="auto_appium" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
+              <option name="myItemId" value="auto_appium" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -200,11 +222,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
+              <option name="myItemId" value="auto_appium" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
+              <option name="myItemId" value="auto_appium" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -212,70 +234,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test_run" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_testProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_case" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_testProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PageObject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autoTest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app_testProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="PageObject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Home" />
+              <option name="myItemId" value="common" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -294,7 +259,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.runner_new">
+  <component name="RunManager" selected="Python.BaseYaml">
     <configuration default="false" name="runner_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -458,8 +423,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.runner_new" />
-        <item index="1" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="0" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="1" class="java.lang.String" itemvalue="Python.runner_new" />
         <item index="2" class="java.lang.String" itemvalue="Python.desired_caps1" />
         <item index="3" class="java.lang.String" itemvalue="Python.BasePickle" />
         <item index="4" class="java.lang.String" itemvalue="Python.BaseEmail" />
@@ -576,7 +541,6 @@
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseInit.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_case/test_case/test_login.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/unittest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -587,7 +551,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseOperate.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseStatistics.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_case/case_manager.py" />
@@ -598,13 +561,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="152">
+        <state relative-caret-position="266">
           <caret line="20" column="7" lean-forward="false" selection-start-line="20" selection-start-column="7" selection-end-line="20" selection-end-column="7" />
           <folding />
         </state>
@@ -612,32 +574,47 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="29" column="33" lean-forward="false" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="646">
+          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseOperate.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="63" column="16" lean-forward="false" selection-start-line="63" selection-start-column="16" selection-end-line="63" selection-end-column="16" />
-          <folding />
+        <state relative-caret-position="278">
+          <caret line="101" column="62" lean-forward="true" selection-start-line="101" selection-start-column="62" selection-end-line="101" selection-end-column="62" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="20" column="18" lean-forward="false" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        <state relative-caret-position="266">
+          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="573">
-          <caret line="93" column="20" lean-forward="false" selection-start-line="93" selection-start-column="20" selection-end-line="93" selection-end-column="20" />
+        <state relative-caret-position="350">
+          <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="303">
+          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="554">
+          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
           <folding />
         </state>
       </provider>

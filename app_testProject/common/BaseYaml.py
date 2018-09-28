@@ -59,7 +59,7 @@ if __name__ == '__main__':
     t2 = PATH('../yamls/home/login.yaml')
     # t2 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\login.yaml'
     # print(getMultiYam(PATH("../yamls/home/firstOpen.yaml")))
-    testinfo = getMultiYam(t1)[1].get("testDevice", False)
+    testinfo = getMultiYam(t2)[1]
     print(testinfo)
     if testinfo:
         print('yes')

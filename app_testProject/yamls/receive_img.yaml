@@ -1,0 +1,31 @@
+testDevice: '201bd2fd7d74'
+testinfo:
+    - id: test003
+      title: 接收信息
+      info: 打开微信，查看图片
+testcase:
+    - element_info: receiver.png
+      find_type: img
+      is_time: 30
+      operate_type: tap
+      info: 点击发送方的头像
+#    - element_info: people.png
+#      find_type: img
+#      operate_type: tap
+#      info: 点击通讯录
+#    - element_info: my.png
+#      find_type: img
+#      index: 0
+#      operate_type: tap
+#      info: 点击我
+#    - element_info: com.huawei.works.knowledge:id/vdr_fav
+#      find_type: id
+#      is_webview: 2 # 切换到native
+#      operate_type: click
+#      info: 点击取消收藏按钮
+
+check:
+    - element_info: receive_img.png
+      find_type: img
+      check: default_check
+      info: 接收图片信息成功
