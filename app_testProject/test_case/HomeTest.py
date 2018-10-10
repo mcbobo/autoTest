@@ -19,6 +19,7 @@ class HomeTest(UpDown):
         path = PATH('../yamls/home/login_success.yaml')
         self.template(casename, path)
 
+    @unittest.skip('login')
     def testLogining(self):
         casename = sys._getframe().f_code.co_name
         path = PATH('../yamls/home/login.yaml')
@@ -28,18 +29,13 @@ class HomeTest(UpDown):
     #     casename = sys._getframe().f_code.co_name
     #     path = PATH('../yamls/receive.yaml')
     #     self.template(casename, path)
-
     @unittest.skip('img')
     def testSendImg(self):
         casename = sys._getframe().f_code.co_name
-        path = PATH('../yamls/sendImg.yaml')
-        self.template(casename, path)
-
-    @unittest.skip('receive img')
-    def testReceiveImg(self):
-        casename = sys._getframe().f_code.co_name
-        path = PATH('../yamls/receive_img.yaml')
-        self.template(casename, path)
+        p1 = PATH('../yamls/sendImg.yaml')
+        p2 = PATH('../yamls/receive_img.yaml')
+        self.template(casename, p1)
+        self.template(casename, p2)
 
     @unittest.skip('all')
     def testLogin(self):

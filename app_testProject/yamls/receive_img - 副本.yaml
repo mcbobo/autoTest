@@ -4,15 +4,11 @@ testinfo:
       title: 接收信息
       info: 打开微信，查看图片
 testcase:
-    - element_info: com.tencent.mm:id/d1w
-      find_type: id
-      operate_type: click
-      info: 登录
-    - element_info: com.tencent.mm:id/hx
-      find_type: id
-      operate_type: send_keys
-      msg: '13726221317'
-      info: 输入账号
+    - element_info: receiver.png
+      find_type: img
+      is_time: 30
+      operate_type: tap
+      info: 点击发送方的头像
 #    - element_info: people.png
 #      find_type: img
 #      operate_type: tap
@@ -29,10 +25,7 @@ testcase:
 #      info: 点击取消收藏按钮
 
 check:
-    - element_info: com.tencent.mm:id/hx
-      find_type: id
-      operate_type: send_keys
-      msg: '137262'
-      is_time: 3
+    - element_info: receive_img.png
+      find_type: img
       check: default_check
-      info: 输入密码
+      info: 接收图片信息成功

@@ -2,30 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc36a3b7-fd6b-4f47-a8e3-7106aafcc135" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/Xiaomi_Redmi_android_7.1.220180920172009/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/Xiaomi_Redmi_android_7.1.220180920172257/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180920172004/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180920172253/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180920172253/第一次启动appCheckPoint_1_NG.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927174037/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927174037/第一次启动appCheckPoint_1_NG.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221227/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221523/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221523/登录CheckPoint_1_NG.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221751/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221900/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_5.1.120180927221900/登录CheckPoint_1_NG.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/brand1_model2_android_7.1.220180927174039/outPut.log" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/Log/runlog.log" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/icon.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/longin.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/my.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/people.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/receive_msg.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/receiver.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/send.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/send_pass.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/user.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app_testProject/data/element/user_login.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" afterPath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/app/weixin.apk" afterPath="$PROJECT_DIR$/app_testProject/app/weixin.apk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/element/search.png" afterPath="$PROJECT_DIR$/app_testProject/data/element/search.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/info.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/info.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/config/app_caps.yaml" afterPath="$PROJECT_DIR$/app_testProject/config/app_caps.yaml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/sum.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/sum.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" afterPath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/home/login.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/home/login.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/home/login_success.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/home/login_success.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/receive_img.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/receive_img.yaml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/sendImg.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/sendImg.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,7 +35,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.5390117">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="Pages.py" pinned="false" current-in-tab="false">
@@ -49,31 +48,36 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="HomeTest.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="HomeTest.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="303">
-                  <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+                <state relative-caret-position="76">
+                  <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BaseElementEnmu.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py">
+          <file leaf-file-name="BaseAppiumImage.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="266">
-                  <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-                  <folding />
+                <state relative-caret-position="396">
+                  <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+                  <folding>
+                    <element signature="e#15#24#0" expanded="true" />
+                    <element signature="e#347#373#0" expanded="false" />
+                    <element signature="e#2751#3188#0" expanded="false" />
+                    <element signature="e#3221#3641#0" expanded="false" />
+                  </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="BaseSetupDown_new.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
+          <file leaf-file-name="desired_caps1.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/desired_caps1.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="646">
-                  <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
+                <state relative-caret-position="282">
+                  <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -83,11 +87,11 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="BaseYaml.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="BaseYaml.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="554">
-                  <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+                <state relative-caret-position="1159">
+                  <caret line="63" column="18" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -96,8 +100,18 @@
           <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="350">
-                  <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
+                <state relative-caret-position="906">
+                  <caret line="91" column="36" lean-forward="false" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseOperate.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app_testProject/Base/BaseOperate.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="213">
+                  <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -109,13 +123,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>通过</find>
-      <find>。</find>
-      <find>。。</find>
-      <find>.</find>
-      <find>../</find>
-      <find>..com</find>
-      <find>..co</find>
       <find>..c</find>
       <find>..</find>
       <find>..\</find>
@@ -125,20 +132,27 @@
       <find>info</find>
       <find>skip</find>
       <find>HomeTest</find>
-      <find>d</find>
       <find>dai</find>
       <find>da</find>
-      <find>den</find>
-      <find>deng</find>
-      <find>deng'd</find>
       <find>deng'dai</find>
-      <find>等待</find>
       <find>f</find>
       <find>fan's</find>
       <find>fan</find>
       <find>fa</find>
       <find>fa's't</find>
       <find>fast</find>
+      <find>test0</find>
+      <find>de</find>
+      <find>d</find>
+      <find>den</find>
+      <find>deng</find>
+      <find>deng'd</find>
+      <find>等等</find>
+      <find>等</find>
+      <find>等d</find>
+      <find>等dai</find>
+      <find>等待</find>
+      <find>NoSuchElementException</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -167,9 +181,11 @@
         <option value="$PROJECT_DIR$/app_testProject/common/BaseRunner.py" />
         <option value="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
-        <option value="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
-        <option value="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
+        <option value="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
+        <option value="$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py" />
+        <option value="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
+        <option value="$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py" />
       </list>
     </option>
   </component>
@@ -245,7 +261,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../stf" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -259,7 +275,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BaseYaml">
+  <component name="RunManager" selected="Python.BaseAppiumImage">
     <configuration default="false" name="runner_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -273,24 +289,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="auto_appium" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
-    <configuration default="false" name="BaseEmail" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_testProject/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="auto_appium" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -345,6 +343,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="auto_appium" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="BaseAppiumImage" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_testProject/common" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="auto_appium" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -416,18 +432,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.runner_new" />
-      <item index="1" class="java.lang.String" itemvalue="Python.BaseEmail" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BasePickle" />
-      <item index="3" class="java.lang.String" itemvalue="Python.BaseYaml" />
-      <item index="4" class="java.lang.String" itemvalue="Python.desired_caps1" />
+      <item index="1" class="java.lang.String" itemvalue="Python.BasePickle" />
+      <item index="2" class="java.lang.String" itemvalue="Python.BaseYaml" />
+      <item index="3" class="java.lang.String" itemvalue="Python.desired_caps1" />
+      <item index="4" class="java.lang.String" itemvalue="Python.BaseAppiumImage" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.BaseYaml" />
-        <item index="1" class="java.lang.String" itemvalue="Python.runner_new" />
-        <item index="2" class="java.lang.String" itemvalue="Python.desired_caps1" />
-        <item index="3" class="java.lang.String" itemvalue="Python.BasePickle" />
-        <item index="4" class="java.lang.String" itemvalue="Python.BaseEmail" />
+        <item index="0" class="java.lang.String" itemvalue="Python.BaseAppiumImage" />
+        <item index="1" class="java.lang.String" itemvalue="Python.desired_caps1" />
+        <item index="2" class="java.lang.String" itemvalue="Python.runner_new" />
+        <item index="3" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="4" class="java.lang.String" itemvalue="Python.BasePickle" />
       </list>
     </recent_temporary>
   </component>
@@ -474,26 +490,25 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="1" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19895834" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3058201" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24232805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -507,9 +522,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/run.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runTest.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py" />
@@ -550,7 +562,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/desired_caps1.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseStatistics.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_case/case_manager.py" />
@@ -572,14 +583,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="39" column="27" lean-forward="false" selection-start-line="39" selection-start-column="27" selection-end-line="39" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseOperate.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="278">
@@ -589,33 +592,78 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="14" lean-forward="false" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="79" column="32" lean-forward="false" selection-start-line="79" selection-start-column="32" selection-end-line="79" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="303">
-          <caret line="22" column="49" lean-forward="false" selection-start-line="22" selection-start-column="49" selection-end-line="22" selection-end-column="49" />
+        <state relative-caret-position="182">
+          <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="15" selection-end-line="10" selection-end-column="16" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="62" column="19" lean-forward="true" selection-start-line="62" selection-start-column="19" selection-end-line="62" selection-end-column="19" />
+        <state relative-caret-position="1159">
+          <caret line="63" column="18" lean-forward="false" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="9" column="1" lean-forward="false" selection-start-line="9" selection-start-column="1" selection-end-line="9" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="28" column="30" lean-forward="false" selection-start-line="28" selection-start-column="30" selection-end-line="28" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/Base/BaseOperate_me.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="8" column="55" lean-forward="true" selection-start-line="8" selection-start-column="55" selection-end-line="8" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="906">
+          <caret line="91" column="36" lean-forward="false" selection-start-line="91" selection-start-column="36" selection-end-line="91" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/Base/BaseOperate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/desired_caps1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="29" column="0" lean-forward="false" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="56" column="34" lean-forward="true" selection-start-line="56" selection-start-column="34" selection-end-line="56" selection-end-column="34" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
+            <element signature="e#347#373#0" expanded="false" />
+            <element signature="e#2751#3188#0" expanded="false" />
+            <element signature="e#3221#3641#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

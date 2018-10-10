@@ -6,7 +6,9 @@ import cv2
 # import pytesseract
 import time
 from common.BaseImage import image_to_str
-from selenium.common.exceptions import NoSuchElementException
+import selenium.common.exceptions
+
+# from selenium.common.exceptions import NoSuchElementException
 
 TPATH = lambda p: os.path.abspath(p)
 TEMP_FILE = TPATH(tempfile.gettempdir() + "/temp_screen.png")
@@ -45,7 +47,7 @@ class AppiumImage:
         # 根据路径图片得到设备上的坐标,resolution为设备的分辨率字典比例（分辨率默认为900x500）
         flag = 0
         imobj = cv2.imread(img_path)
-        resolution = {1920: 2.13, 1280: 1.42, 1812: 2.013, 900: 1}
+        resolution = {1920: 2.13, 1280: 1.42, 1812: 2.013, 900: 1, 1794: 1.993}
         width, height = [self.get_window_size()[k] for k in ('width', 'height')]
         longest = width if width > height else height
         while flag < 3:
@@ -63,7 +65,7 @@ class AppiumImage:
                 time.sleep(3)
             else:
                 return [tuple([i * resolution[longest] for i in pos])]
-        raise NoSuchElementException('can not find element')
+        raise selenium.common.exceptions.NoSuchElementException('can not find element')
 
     # @staticmethod
     def element_position(self, img):
@@ -104,15 +106,21 @@ if __name__ == '__main__':
     from common.desired_caps1 import appium_desired
 
     # path = r'../picture/loginBtn.png'
-    path = 'people.png'
+    path = r'D:\soft\pyc\auto_appium\app_testProject\data\element\pwd.png'
     driver = appium_desired()
     star_time = time.time()
     pos = AppiumImage(driver).element_position(path)
     driver.tap(pos)
-    pos1 = AppiumImage(driver).element_position('my.png')
-    driver.tap(pos1)
-    time.sleep(3)
-    pos = AppiumImage(driver).element_position(path)
-    driver.tap(pos)
-    end_time = time.time()
-    print('total time:%s' % (end_time - star_time))
+    # p1 = r'D:\soft\pyc\auto_appium\app_testProject\data\element\num.png'
+    # pos1 = AppiumImage(driver).element_position(p1)
+    # driver.tap(pos1)
+    # time.sleep(3)
+    # pos = AppiumImage(driver).element_position(path)
+    # driver.tap(pos)
+    # end_time = time.time()
+    # print('total time:%s' % (end_time - star_time))
+    # img1 = r"D:\Hlddz\t1.png"
+    # imsrc = cv2.imread(img1)
+    # imobj = cv2.imread(path)
+    # result = ac.find_template(imsrc, imobj, 0.7).get('result')
+    # print(result)

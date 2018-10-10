@@ -56,13 +56,13 @@ if __name__ == '__main__':
     )
     # print(PATH("../yaml/home/firstOpen.yaml"))
     t1 = PATH('../yamls/home/firstOpen.yaml')
-    t2 = PATH('../yamls/home/login.yaml')
+    t2 = PATH('../yamls/sendImg.yaml')
     # t2 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\login.yaml'
     # print(getMultiYam(PATH("../yamls/home/firstOpen.yaml")))
     testinfo = getMultiYam(t2)[1]
     print(testinfo)
-    if testinfo:
-        print('yes')
+    # if testinfo:
+        # print('yes')
 
     # port = str(random.randint(4700, 4900))
     # bpport = str(random.randint(4700, 4900))
