@@ -5,7 +5,7 @@ import aircv as ac
 import cv2
 # import pytesseract
 import time
-from common.BaseImage import image_to_str
+from common.BaseImage import image_to_str, match_image
 import selenium.common.exceptions
 
 # from selenium.common.exceptions import NoSuchElementException
@@ -59,11 +59,13 @@ class AppiumImage:
                 else:
                     imsrc = cv2.resize(imsrc, (500, 900))
             try:
-                pos = ac.find_template(imsrc, imobj, 0.7).get('result')
+                # pos = ac.find_template(imsrc, imobj, 0.7).get('result')
+                pos = match_image(imsrc, imobj, 0.7).get('result')
             except AttributeError:
                 flag += 1
                 time.sleep(3)
             else:
+                print([tuple([i * resolution[longest] for i in pos])])
                 return [tuple([i * resolution[longest] for i in pos])]
         raise selenium.common.exceptions.NoSuchElementException('can not find element')
 
@@ -106,7 +108,7 @@ if __name__ == '__main__':
     from common.desired_caps1 import appium_desired
 
     # path = r'../picture/loginBtn.png'
-    path = r'D:\soft\pyc\auto_appium\app_testProject\data\element\pwd.png'
+    path = r'D:\soft\pyc\auto_appium\app_testProject\data\element\search.png'
     driver = appium_desired()
     star_time = time.time()
     pos = AppiumImage(driver).element_position(path)

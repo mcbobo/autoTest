@@ -80,6 +80,28 @@ def image_to_str(img):
     return code
 
 
+def match_image(image, templ, value):
+    """在目标图片中匹配模板图片，当max_val大于0.7的时候，匹配成功"""
+    info = {}
+
+    # 匹配方式
+    # methods = [cv2.TM_SQDIFF_NORMED, cv2.TM_CCORR_NORMED, cv2.TM_CCOEFF_NORMED]
+    md = cv2.TM_CCOEFF_NORMED
+
+    th, tw = templ.shape[:2]
+    result = cv2.matchTemplate(templ, image, md)
+    min_val, max_val, min_loc, max_loc = cv2.minMaxLoc(result)
+
+    if max_val <= value:
+        return None
+    if md == cv2.TM_SQDIFF_NORMED:
+        tl = min_loc
+    else:
+        tl = max_loc
+    info["result"] = (tl[0] + tw, tl[1] + th)
+    return info
+
+
 if __name__ == '__main__':
     # st = time.time()
     p = r'D:\2.png'
