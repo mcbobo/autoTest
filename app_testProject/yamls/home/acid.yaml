@@ -26,7 +26,6 @@ check:
    #- element_info: com.tencent.mm:id/hx
    - element_info: com.tencent.mm:id/ji
      find_type: id
-     is_time: 30
      #operate_type: click
      check: default_check
      info: 验证成功

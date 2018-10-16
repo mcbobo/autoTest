@@ -259,12 +259,13 @@ class OperateElement:
         :param mOperate:
         :return:
         """
-        self.elements_by(mOperate).send_keys(mOperate["msg"])
+        # self.elements_by(mOperate).send_keys(mOperate["msg"])
+        self.elements_by(mOperate).send_keys(u'夜的忧伤')
         return {"result": True}
 
     def fast_set_value(self, mOperate, device):
         """
-        输入值，解决send_keys输入过慢的问题,好像时间消耗跟上面的差不多，bad
+        输入值，解决send_keys输入过慢的问题,好像时间消耗跟上面的差不多，bad，而且输入中文失败了好像
         :param mOperate: 
         :param device: 
         :return: 
@@ -272,6 +273,7 @@ class OperateElement:
         self.elements_by(mOperate).click()
         time.sleep(0.3)
         subprocess.Popen('adb -s %s shell input text %s' % (device, mOperate["msg"]), shell=True)
+        # subprocess.Popen('adb -s %s shell input text %s' % (device, u'夜的忧伤'), shell=True)
         time.sleep(0.3)
         return {"result": True}
 
