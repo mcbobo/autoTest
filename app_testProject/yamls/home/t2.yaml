@@ -1,0 +1,16 @@
+testinfo:
+    - id: test002
+      title: 登录
+      info: 输入密码and登录
+testcase:
+    - element_info: com.tencent.mm:id/hx
+      find_type: id
+      operate_type: send_keys
+      msg: '13726221317'
+      info: 输入账号
+check:
+    - element_info: login.png
+      find_type: img
+      operate_type: tap
+      check: default_check
+      info: 点击登录

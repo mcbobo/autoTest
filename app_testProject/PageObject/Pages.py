@@ -18,6 +18,8 @@ class PagesObjects:
     isOperate: 操作失败，检查点就失败
     testInfo：
     testCase：
+    2018/10/16 尝试operate插入判断testCase中是否有check，如果有则作为参数（列表）传入check方法。因为传参数到check方法
+    ，check方法，增加参数
     """
 
     def __init__(self, kwargs):
@@ -48,6 +50,9 @@ class PagesObjects:
             self.isOperate = False
             return False
         for item in self.testCase:
+            if item.get("check") is not None:
+                self.check()
+                continue
             m_s_g = self.msg + "\n" if self.msg != "" else ""
             result = self.operateElement.operate(item, self.testInfo, self.logTest, self.device)
             if not result["result"]:
