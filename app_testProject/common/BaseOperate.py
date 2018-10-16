@@ -162,7 +162,8 @@ class OperateElement:
     # 点击事件
     def click(self, mOperate):
         # print(self.driver.page_source)
-        if mOperate["find_type"] == be.find_element_by_id or mOperate["find_type"] == be.find_element_by_xpath:
+        if mOperate["find_type"] == be.find_element_by_id or mOperate["find_type"] == be.find_element_by_xpath or \
+                        mOperate["find_type"] == be.find_element_by_accessibility_id:
             self.elements_by(mOperate).click()
         elif mOperate.get("find_type") == be.find_elements_by_id:
             self.elements_by(mOperate)[mOperate["index"]].click()
@@ -336,6 +337,8 @@ class OperateElement:
             be.find_element_by_css_selector: lambda: self.driver.find_element_by_css_selector(mOperate['element_info']),
             be.find_element_by_class_name: lambda: self.driver.find_element_by_class_name(mOperate['element_info']),
             be.find_elements_by_id: lambda: self.driver.find_elements_by_id(mOperate['element_info']),
+            be.find_element_by_accessibility_id: lambda: self.driver.find_element_by_accessibility_id(
+                mOperate['element_info']),
             be.find_element_by_image: lambda: self.find_element_by_image(mOperate['element_info'])
         }
         return elements[mOperate["find_type"]]()

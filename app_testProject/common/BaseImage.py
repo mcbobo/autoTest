@@ -82,6 +82,7 @@ def image_to_str(img):
 
 def match_image(image, templ, value):
     """在目标图片中匹配模板图片，当max_val大于0.7的时候，匹配成功"""
+    import numpy as np
     info = {}
 
     # 匹配方式
@@ -99,6 +100,13 @@ def match_image(image, templ, value):
     else:
         tl = max_loc
     info["result"] = (tl[0] + tw, tl[1] + th)
+    # 调试用的代码
+    # br = info["result"]
+    # target = image
+    # cv2.rectangle(target, tl, br, (0, 0, 255), 2)
+    # cv2.imshow('match-' + np.str(md), target)
+    # cv2.waitKey(0)
+    # cv2.destroyAllWindows()
     return info
 
 

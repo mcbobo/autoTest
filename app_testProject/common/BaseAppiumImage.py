@@ -32,6 +32,7 @@ TEMP_FILE = TPATH(tempfile.gettempdir() + "/temp_screen.png")
 
 class AppiumImage:
     position = {}
+    resolution = {1920: 2.13, 1280: 1.42, 1812: 2.013, 900: 1, 1794: 1.993}
 
     def __init__(self, driver):
         self.driver = driver
@@ -47,9 +48,13 @@ class AppiumImage:
         # 根据路径图片得到设备上的坐标,resolution为设备的分辨率字典比例（分辨率默认为900x500）
         flag = 0
         imobj = cv2.imread(img_path)
-        resolution = {1920: 2.13, 1280: 1.42, 1812: 2.013, 900: 1, 1794: 1.993}
         width, height = [self.get_window_size()[k] for k in ('width', 'height')]
         longest = width if width > height else height
+
+        # get图片分辨率，没有则加入字典
+        if self.resolution.get(longest) is None:
+            self.resolution[longest] = round(longest / 900, 4)
+
         while flag < 3:
             self.driver.get_screenshot_as_file(TEMP_FILE)
             imsrc = cv2.imread(TEMP_FILE)
@@ -65,8 +70,7 @@ class AppiumImage:
                 flag += 1
                 time.sleep(3)
             else:
-                print([tuple([i * resolution[longest] for i in pos])])
-                return [tuple([i * resolution[longest] for i in pos])]
+                return [tuple([i * self.resolution[longest] for i in pos])]
         raise selenium.common.exceptions.NoSuchElementException('can not find element')
 
     # @staticmethod
@@ -110,7 +114,7 @@ if __name__ == '__main__':
     # path = r'../picture/loginBtn.png'
     path = r'D:\soft\pyc\auto_appium\app_testProject\data\element\search.png'
     driver = appium_desired()
-    star_time = time.time()
+    time.sleep(5)
     pos = AppiumImage(driver).element_position(path)
     driver.tap(pos)
     # p1 = r'D:\soft\pyc\auto_appium\app_testProject\data\element\num.png'

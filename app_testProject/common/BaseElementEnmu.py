@@ -2,6 +2,7 @@ class Element(object):
     # 常用操作关键字
     find_element_by_id = "id"
     find_elements_by_id = "ids"
+    find_element_by_accessibility_id = "acid"
     INDEX = "index"
     find_element_by_image = "img"
     find_elements_by_xpath = "xpaths"
