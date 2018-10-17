@@ -2,19 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc36a3b7-fd6b-4f47-a8e3-7106aafcc135" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" afterPath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/info.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/info.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" afterPath="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" afterPath="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseOperate.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseOperate.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" afterPath="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/sum.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/sum.pickle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" afterPath="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/test_run/BaseRunner.py" afterPath="$PROJECT_DIR$/app_testProject/test_run/BaseRunner.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/home/t1.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/home/t1.yaml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/yamls/home/t2.yaml" afterPath="$PROJECT_DIR$/app_testProject/yamls/home/t2.yaml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -25,95 +18,86 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Pages.py" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
-              <folding>
-                <element signature="e#2758#3734#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HomeTest.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="20" column="38" lean-forward="false" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseSetupDown_new.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="18" column="8" lean-forward="false" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="78" column="26" lean-forward="false" selection-start-line="78" selection-start-column="26" selection-end-line="78" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseOperate.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseOperate.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="266" column="49" lean-forward="false" selection-start-line="266" selection-start-column="49" selection-end-line="266" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BaseYaml.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="226">
-              <caret line="48" column="76" lean-forward="false" selection-start-line="48" selection-start-column="76" selection-end-line="48" selection-end-column="76" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="check_port.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="548">
-              <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5368492">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file leaf-file-name="Pages.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-2055">
+                  <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+                  <folding>
+                    <element signature="e#2758#3734#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="wifi_connect.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+                  <folding>
+                    <element signature="e#15#24#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BaseAppiumImage.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="247">
+                  <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+                  <folding>
+                    <element signature="e#360#386#0" expanded="false" />
+                    <element signature="e#2975#3412#0" expanded="false" />
+                    <element signature="e#3445#3865#0" expanded="false" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="BaseAndroidPhone.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="418">
+                  <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+                  <folding>
+                    <element signature="e#24#33#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="BasePickle.py" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="304">
+                  <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>den</find>
-      <find>deng</find>
-      <find>deng'd</find>
-      <find>等等</find>
-      <find>等</find>
-      <find>等d</find>
-      <find>等dai</find>
-      <find>等待</find>
-      <find>NoSuchElementException</find>
-      <find>cv</find>
-      <find>TM_CCOEFF</find>
-      <find>ACCESSIBILITY_ID</find>
       <find>find_element_by_accessibility_id</find>
       <find>swipeLeft</find>
       <find>re_reulst</find>
@@ -132,6 +116,18 @@
       <find>is_ti</find>
       <find>is_tim</find>
       <find>is_time</find>
+      <find>u</find>
+      <find>udid</find>
+      <find>subprocess</find>
+      <find>s</find>
+      <find>sum</find>
+      <find>sum.</find>
+      <find>sum.p</find>
+      <find>sum.pil</find>
+      <find>sum.pi</find>
+      <find>sum.pic</find>
+      <find>sum.pick</find>
+      <find>print</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -170,13 +166,14 @@
         <option value="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
         <option value="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
+        <option value="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-21" />
     <option name="y" value="2" />
-    <option name="width" value="1404" />
+    <option name="width" value="1877" />
     <option name="height" value="1056" />
   </component>
   <component name="ProjectView">
@@ -272,6 +269,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="data" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_testProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="common" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="auto_appium" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app_testProject" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="appiuim_service" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -295,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.BaseYaml">
+  <component name="RunManager" selected="Python.wifi_connect">
     <configuration default="false" name="runner_new" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -332,24 +365,6 @@
       <option name="EMULATE_TERMINAL" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="BaseAppiumImage" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_testProject/common" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="auto_appium" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="Unittests in BaseRunner.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -378,6 +393,24 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="auto_appium" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="wifi_connect" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/app_testProject/appiuim_service" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="auto_appium" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -450,17 +483,17 @@
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.runner_new" />
       <item index="1" class="java.lang.String" itemvalue="Python.BaseYaml" />
-      <item index="2" class="java.lang.String" itemvalue="Python.BaseAppiumImage" />
-      <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in BaseRunner.py" />
-      <item index="4" class="java.lang.String" itemvalue="Python.check_port" />
+      <item index="2" class="java.lang.String" itemvalue="Python tests.Unittests in BaseRunner.py" />
+      <item index="3" class="java.lang.String" itemvalue="Python.check_port" />
+      <item index="4" class="java.lang.String" itemvalue="Python.wifi_connect" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python.BaseYaml" />
-        <item index="1" class="java.lang.String" itemvalue="Python.runner_new" />
-        <item index="2" class="java.lang.String" itemvalue="Python.check_port" />
-        <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in BaseRunner.py" />
-        <item index="4" class="java.lang.String" itemvalue="Python.BaseAppiumImage" />
+        <item index="0" class="java.lang.String" itemvalue="Python.wifi_connect" />
+        <item index="1" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="2" class="java.lang.String" itemvalue="Python.runner_new" />
+        <item index="3" class="java.lang.String" itemvalue="Python.check_port" />
+        <item index="4" class="java.lang.String" itemvalue="Python tests.Unittests in BaseRunner.py" />
       </list>
     </recent_temporary>
   </component>
@@ -510,14 +543,14 @@
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-21" y="2" width="1404" height="1056" extended-state="1" />
+    <frame x="-21" y="2" width="1877" height="1056" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27521613" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20526598" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24232805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24232805" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -543,10 +576,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseLog.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseSetupDown_new.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py" />
@@ -567,7 +596,6 @@
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseFile.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseInit.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseEmail.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_case/test_case/test_login.py" />
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python35/Lib/unittest/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -577,9 +605,7 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseStatistics.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/test_case/case_manager.py" />
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseApk.py" />
     <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Home/FirstOpenPage.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -606,6 +632,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="7822" column="27" lean-forward="false" selection-start-line="7822" selection-start-column="25" selection-end-line="7822" selection-end-column="30" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,6 +661,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="4" column="45" lean-forward="false" selection-start-line="4" selection-start-column="45" selection-end-line="4" selection-end-column="45" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -649,19 +677,6 @@
         <state relative-caret-position="247">
           <caret line="46" column="67" lean-forward="true" selection-start-line="46" selection-start-column="67" selection-end-line="46" selection-end-column="67" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="111" column="51" lean-forward="false" selection-start-line="111" selection-start-column="51" selection-end-line="111" selection-end-column="51" />
-          <folding>
-            <element signature="e#15#24#0" expanded="false" />
-            <element signature="e#360#386#0" expanded="false" />
-            <element signature="e#2975#3412#0" expanded="false" />
-            <element signature="e#3445#3865#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -715,14 +730,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="548">
-          <caret line="52" column="7" lean-forward="false" selection-start-line="52" selection-start-column="7" selection-end-line="52" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseYaml.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="226">
@@ -739,12 +746,92 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="722">
+          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/multi_service_device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="21" lean-forward="true" selection-start-line="0" selection-start-column="21" selection-end-line="0" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="342">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAdb.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="15" column="37" lean-forward="true" selection-start-line="15" selection-start-column="37" selection-end-line="15" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/multi_appiuim.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="7" column="36" lean-forward="true" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/PageObject/Pages.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="64" column="38" lean-forward="true" selection-start-line="64" selection-start-column="38" selection-end-line="64" selection-end-column="38" />
+        <state relative-caret-position="-2055">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding>
             <element signature="e#2758#3734#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="33" column="17" lean-forward="true" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+          <folding>
+            <element signature="e#360#386#0" expanded="false" />
+            <element signature="e#2975#3412#0" expanded="false" />
+            <element signature="e#3445#3865#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BaseAndroidPhone.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="29" lean-forward="true" selection-start-line="22" selection-start-column="29" selection-end-line="22" selection-end-column="29" />
+          <folding>
+            <element signature="e#24#33#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="40" column="46" lean-forward="true" selection-start-line="40" selection-start-column="46" selection-end-line="40" selection-end-column="46" />
+          <folding>
+            <element signature="e#15#24#0" expanded="true" />
           </folding>
         </state>
       </provider>
