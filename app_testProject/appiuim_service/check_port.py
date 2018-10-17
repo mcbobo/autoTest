@@ -40,5 +40,17 @@ def release_port(port):
 if __name__ == '__main__':
     host = '127.0.0.1'
     port = 4725
-    check_port(host, port)
+    # check_port(host, port)
     # release_port(port)
+    d = {'a': 1, 'b': 2}
+
+
+    def f(test):
+        for i in test:
+            print(i)
+
+
+    t = []
+    t.append(d)
+    print(t)
+    f(t)

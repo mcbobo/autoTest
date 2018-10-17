@@ -16,8 +16,9 @@ class HomeTest(UpDown):
     def testStatus(self):
         print("testStatus")
         casename = sys._getframe().f_code.co_name
-        path = PATH('../yamls/home/acid.yaml')
-        self.template(casename, path)
+        p1 = PATH('../yamls/home/t1.yaml')
+        p2 = PATH('../yamls/home/t2.yaml')
+        self.template(casename, p1, p2)
 
     @unittest.skip('login')
     def testLogining(self):

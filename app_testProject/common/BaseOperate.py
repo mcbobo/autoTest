@@ -259,8 +259,7 @@ class OperateElement:
         :param mOperate:
         :return:
         """
-        # self.elements_by(mOperate).send_keys(mOperate["msg"])
-        self.elements_by(mOperate).send_keys(u'夜的忧伤')
+        self.elements_by(mOperate).send_keys(mOperate["msg"])
         return {"result": True}
 
     def fast_set_value(self, mOperate, device):
@@ -273,7 +272,6 @@ class OperateElement:
         self.elements_by(mOperate).click()
         time.sleep(0.3)
         subprocess.Popen('adb -s %s shell input text %s' % (device, mOperate["msg"]), shell=True)
-        # subprocess.Popen('adb -s %s shell input text %s' % (device, u'夜的忧伤'), shell=True)
         time.sleep(0.3)
         return {"result": True}
 

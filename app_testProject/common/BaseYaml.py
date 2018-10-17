@@ -42,6 +42,7 @@ def getMultiYam(*args):
             if i == args[-1]:
                 case["check"].extend(info[1]["check"])
             else:
+                info[1]["check"][0]['case_check'] = 1
                 case["testcase"].extend(info[1]["check"])
             case["testinfo"][0]["title"] += info[1]["testinfo"][0]["title"] + '\n'
             case["testinfo"][0]["info"] += info[1]["testinfo"][0]["info"] + '\n'
@@ -63,8 +64,8 @@ if __name__ == '__main__':
     # t2 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\login.yaml'
     # print(getMultiYam(PATH("../yamls/home/firstOpen.yaml")))
     testinfo = getMultiYam(t1, t2)[1]
-    print(testinfo['testcase'])
-    print(testinfo['check'])
+    # print(testinfo['testcase'])
+    # print(testinfo['check'])
     # if testinfo:
     # print('yes')
 

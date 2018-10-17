@@ -1,16 +1,23 @@
 testinfo:
     - id: test002
-      title: 登录
-      info: 输入密码and登录
+      title: 登录2
+      info: 输入密码
 testcase:
+    - element_info: com.tencent.mm:id/ak_
+      find_type: id
+      operate_type: click
+      info: 点击下一步
+      is_time: 10
+check:
     - element_info: com.tencent.mm:id/hx
       find_type: id
-      operate_type: send_keys
-      msg: '13726221317'
-      info: 输入账号
-check:
-    - element_info: login.png
-      find_type: img
-      operate_type: tap
+      operate_type: set_value
+      msg: '123456'
+      is_time: 20
+      check: default_check
+      info: 输入密码
+    - element_info: com.tencent.mm:id/ak_
+      find_type: id
+      operate_type: click
       check: default_check
       info: 点击登录

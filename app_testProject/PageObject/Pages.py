@@ -50,8 +50,8 @@ class PagesObjects:
             self.isOperate = False
             return False
         for item in self.testCase:
-            if item.get("check") is not None:
-                self.check()
+            if item.get("case_check") is not None:
+                self.check([item])
                 continue
             m_s_g = self.msg + "\n" if self.msg != "" else ""
             result = self.operateElement.operate(item, self.testInfo, self.logTest, self.device)
@@ -111,17 +111,18 @@ class PagesObjects:
     """
 
     # def check(self, kwargs):
-    def check(self):
+    # 2018/10/17 新增testcheck参数
+    def check(self, testcheck=None):
         result = True
         m_s_g = self.msg + "\n" if self.msg != "" else ""
         # 如果有重跑机制，成功后会默认把日志传进来
-
-
         # if kwargs.get("check_point", "0") != "0": 自定义检查点
         #     return kwargs["check_point"]
+        if testcheck is None:
+            testcheck = self.testcheck
 
         if self.isOperate:
-            for item in self.testcheck:
+            for item in testcheck:
                 kwargs = item
                 if kwargs.get("check", be.DEFAULT_CHECK) == be.TOAST:
                     result = \

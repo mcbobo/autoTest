@@ -96,4 +96,7 @@ if __name__ == '__main__':
     from common.devices import devices
 
     # print(appium_testcase(devices()[0]))
-    appium_testcase(devices()[1])
+    # appium_testcase(devices()[1])
+    d = {'a': 1, 'b': 2}
+    for i in d:
+        print(i)

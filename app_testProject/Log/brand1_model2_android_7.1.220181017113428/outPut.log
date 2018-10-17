@@ -1,0 +1,26 @@
+2018-10-17 11:34:33,780  - INFO - ----  test001
+test002
+_µÇÂ¼1
+µÇÂ¼2
+_com.tencent.mm:id/d1w_click          ----
+2018-10-17 11:34:34,724  - INFO - ----  test001
+test002
+_µÇÂ¼1
+µÇÂ¼2
+_com.tencent.mm:id/hx_set_value 13726221317        ----
+2018-10-17 11:34:40,170  - INFO - ----  test001
+test002
+_µÇÂ¼1
+µÇÂ¼2
+_com.tencent.mm:id/ak__click          ----
+2018-10-17 11:34:41,308  - INFO - ----  test001
+test002
+_µÇÂ¼1
+µÇÂ¼2
+_com.tencent.mm:id/hx_set_value 123456        ----
+2018-10-17 11:34:56,141  - INFO - ----  test001
+test002
+_µÇÂ¼1
+µÇÂ¼2
+_com.tencent.mm:id/ak__click          ----
+2018-10-17 11:34:56,619  - INFO - [CheckPoint_1]: testStatus_ : OK
