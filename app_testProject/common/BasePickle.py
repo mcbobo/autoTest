@@ -2,6 +2,17 @@ import pickle
 import os
 
 
+def file_status(fun):
+    def wrapper(path):
+        if not os.path.isfile(path):
+            with open(path, 'w+', encoding="utf-8") as fs:
+                print("创建%s文件成功" % path)
+                pass
+        return fun(path)
+
+    return wrapper
+
+
 def write(data, path="data.pickle"):
     with open(path, 'wb') as f:
         pickle.dump(data, f, 0)
@@ -16,6 +27,7 @@ def read(path):
     return data
 
 
+@file_status
 def readInfo(path):
     # data = []
     with open(path, 'rb') as f:
