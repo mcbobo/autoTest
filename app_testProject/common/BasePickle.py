@@ -18,16 +18,17 @@ def write(data, path="data.pickle"):
         pickle.dump(data, f, 0)
 
 
+@file_status
 def read(path):
     with open(path, 'rb') as f:
         try:
             data = pickle.load(f)
+            print(data)
         except EOFError:
             data = {}
     return data
 
 
-@file_status
 def readInfo(path):
     # data = []
     with open(path, 'rb') as f:

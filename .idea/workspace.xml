@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc36a3b7-fd6b-4f47-a8e3-7106aafcc135" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" afterPath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/devices.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/devices.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/info.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/info.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" afterPath="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" afterPath="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/common/BasePickle.py" afterPath="$PROJECT_DIR$/app_testProject/common/BasePickle.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/ip.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/ip.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/sum.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/sum.pickle" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,14 +29,7 @@
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="247">
                   <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-                  <folding>
-                    <marker date="1539871452158" expanded="true" signature="352:477" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-                    <marker date="1539871452158" expanded="true" signature="4522:5061" ph="..." />
-                    <marker date="1539871452158" expanded="true" signature="4750:5035" ph="..." />
-                    <marker date="1539871452158" expanded="true" signature="5288:5614" ph="..." />
-                    <marker date="1539871452158" expanded="true" signature="5706:6009" ph="..." />
-                    <marker date="1539871452158" expanded="true" signature="6226:6552" ph="..." />
-                  </folding>
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -36,12 +37,22 @@
           <file leaf-file-name="wifi_connect.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="342">
-                  <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+                <state relative-caret-position="739">
+                  <caret line="166" column="18" lean-forward="true" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="18" />
                   <folding>
                     <element signature="e#15#24#0" expanded="true" />
-                    <element signature="e#1986#2193#0" expanded="false" />
+                    <element signature="e#3176#5055#0" expanded="false" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="check_port.py" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="38">
+                  <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
                 </state>
               </provider>
             </entry>
@@ -65,18 +76,8 @@
           <file leaf-file-name="runner_new.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="744">
+                <state relative-caret-position="1769">
                   <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="multi_appiuim.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/multi_appiuim.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="171">
-                  <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -95,9 +96,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>夜的</find>
-      <find>i</find>
-      <find>is</find>
       <find>is_</find>
       <find>is_t</find>
       <find>is_ti</find>
@@ -113,7 +111,6 @@
       <find>sum.pi</find>
       <find>sum.pic</find>
       <find>sum.pick</find>
-      <find>ip_pool</find>
       <find>save_ip</find>
       <find>lock</find>
       <find>print</find>
@@ -121,10 +118,14 @@
       <find>设备</find>
       <find>loc_pool</find>
       <find>run_pool</find>
-      <find>ipPort_pool</find>
       <find>F</find>
       <find>if</find>
       <find>not</find>
+      <find>-1</find>
+      <find>ip_pool</find>
+      <find>i</find>
+      <find>ip_data</find>
+      <find>ipPort_pool</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -160,12 +161,12 @@
         <option value="$PROJECT_DIR$/app_testProject/common/BaseAppiumImage.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseElementEnmu.py" />
         <option value="$PROJECT_DIR$/app_testProject/test_run/BaseRunner.py" />
-        <option value="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseOperate.py" />
         <option value="$PROJECT_DIR$/app_testProject/test_case/HomeTest.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BaseYaml.py" />
         <option value="$PROJECT_DIR$/app_testProject/PageObject/Pages.py" />
         <option value="$PROJECT_DIR$/app_testProject/common/BasePickle.py" />
+        <option value="$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py" />
         <option value="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" />
       </list>
     </option>
@@ -192,7 +193,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -311,6 +311,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -493,10 +494,10 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.wifi_connect" />
-        <item index="1" class="java.lang.String" itemvalue="Python.BaseFile" />
-        <item index="2" class="java.lang.String" itemvalue="Python.BaseYaml" />
-        <item index="3" class="java.lang.String" itemvalue="Python.runner_new" />
-        <item index="4" class="java.lang.String" itemvalue="Python.check_port" />
+        <item index="1" class="java.lang.String" itemvalue="Python.check_port" />
+        <item index="2" class="java.lang.String" itemvalue="Python.BaseFile" />
+        <item index="3" class="java.lang.String" itemvalue="Python.BaseYaml" />
+        <item index="4" class="java.lang.String" itemvalue="Python.runner_new" />
       </list>
     </recent_temporary>
   </component>
@@ -707,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="39" column="26" lean-forward="true" selection-start-line="39" selection-start-column="26" selection-end-line="39" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/common/devices.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
@@ -732,14 +726,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="247">
           <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
-          <folding>
-            <marker date="1539871452158" expanded="true" signature="352:477" ph="&quot;&quot;&quot;...&quot;&quot;&quot;" />
-            <marker date="1539871452158" expanded="true" signature="4522:5061" ph="..." />
-            <marker date="1539871452158" expanded="true" signature="4750:5035" ph="..." />
-            <marker date="1539871452158" expanded="true" signature="5288:5614" ph="..." />
-            <marker date="1539871452158" expanded="true" signature="5706:6009" ph="..." />
-            <marker date="1539871452158" expanded="true" signature="6226:6552" ph="..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -774,20 +761,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-19">
-          <caret line="8" column="39" lean-forward="false" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/multi_service_device.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="25" column="26" lean-forward="true" selection-start-line="25" selection-start-column="26" selection-end-line="25" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/multi_appiuim.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="171">
@@ -796,21 +769,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/common/BasePickle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="25" column="22" lean-forward="false" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/multi_service_device.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="40" lean-forward="true" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/test_run/runner_new.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="744">
+        <state relative-caret-position="1769">
           <caret line="102" column="18" lean-forward="false" selection-start-line="102" selection-start-column="15" selection-end-line="102" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/check_port.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="2" column="0" lean-forward="false" selection-start-line="2" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="51" column="13" lean-forward="true" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
+        <state relative-caret-position="739">
+          <caret line="166" column="18" lean-forward="true" selection-start-line="166" selection-start-column="18" selection-end-line="166" selection-end-column="18" />
           <folding>
             <element signature="e#15#24#0" expanded="true" />
-            <element signature="e#1986#2193#0" expanded="false" />
+            <element signature="e#3176#5055#0" expanded="false" />
           </folding>
         </state>
       </provider>
