@@ -142,8 +142,8 @@ class WifiConnect:
                             print('ipPort')
                             self.ipPort_pool[uid] = ip_port
                             port += 2
-                            if d == len_devices - 1:
-                                self.ipPort_pool["port"] = port
+                            #if d == len_devices - 1:
+                            self.ipPort_pool["port"] = port
                                 #     self.ip_data.append(ip)
             # run_pool = list(filter(lambda x: x not in exist_pool, self.ip_data))
             # 筛选设备
