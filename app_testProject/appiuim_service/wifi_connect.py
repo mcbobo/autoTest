@@ -115,7 +115,6 @@ class WifiConnect:
         获取设备ip地址
         :return: run_pool
         """
-        exist_pool = ["port"]
         cmd = 'adb devices'
         ip_str = 'inet addr:'
         dev = os.popen(cmd).readlines()
@@ -123,10 +122,11 @@ class WifiConnect:
         port = self.ip_data.get("port", 5555)
 
         if len_devices > 1:
+            self.ipPort_pool['port'] = port
             for d in range(1, len_devices):
                 uid = dev[d].split('\t')[0]
                 if self.ip_data.get(uid):
-                    exist_pool.append(uid)
+                    self.ipPort_pool[uid] = self.ip_data[uid]
                     print("本地已存该设备")
                 elif uid in self.ip_data.values():
                     pass
@@ -142,27 +142,31 @@ class WifiConnect:
                             print('ipPort')
                             self.ipPort_pool[uid] = ip_port
                             port += 2
-                            #if d == len_devices - 1:
-                            self.ipPort_pool["port"] = port
+                            if d == len_devices - 1:
+                                self.ipPort_pool["port"] = port
                                 #     self.ip_data.append(ip)
             # run_pool = list(filter(lambda x: x not in exist_pool, self.ip_data))
             # 筛选设备
             run_pool = {}
             for run in self.ip_data:
-                if run not in exist_pool:
+                if run not in self.ipPort_pool:
                     run_pool[run] = self.ip_data.get(run)
             return run_pool
         else:
-            self.ipPort_pool["port"] = self.ip_data.pop('port')
+            if len(self.ip_data) > 1:
+                self.ipPort_pool["port"] = self.ip_data.pop('port')
             run_pool = self.ip_data
             return run_pool
 
 
 if __name__ == '__main__':
     # WifiConnect().connect_syc()
-    a = WifiConnect()
+    # a = WifiConnect()
     # print(a._ip())
     # print(a.ipPort_pool)
     lal = {'201bd2fd7d74': '192.168.10.140:5557', 'port': 5561}
-    a.save_ip(lal)
+    # a.save_ip(lal)
     # a = read(PATH("../data/ip.pickle"))
+    a = 5561
+    if a in lal:
+        print('addd')
