@@ -129,12 +129,12 @@ class WifiConnect:
                     self.ipPort_pool[uid] = self.ip_data[uid]
                     print("local saved the equipment：%s" % uid)
                 elif uid in self.ip_data.values():
+                    # 已连接的无线设备，删掉ip_data的键值对
                     print('connected device：%s' % uid)
-                    pass
-                    # for key, value in self.ip_data.items():
-                    #     if uid == value:
-                    #         self.ipPort_pool[key] = value
-                    #         break
+                    for key, value in self.ip_data.items():
+                        if uid == value:
+                            self.ipPort_pool[key] = self.ip_data.pop(key)
+                            break
                 else:
                     ip_cmd = 'adb -s ' + uid + ' shell ifconfig wlan0'
                     ip_info = subprocess.Popen(ip_cmd, shell=True, stdout=subprocess.PIPE,
