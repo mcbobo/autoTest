@@ -127,9 +127,14 @@ class WifiConnect:
                 uid = dev[d].split('\t')[0]
                 if self.ip_data.get(uid):
                     self.ipPort_pool[uid] = self.ip_data[uid]
-                    print("本地已存该设备")
+                    print("local saved the equipment：%s" % uid)
                 elif uid in self.ip_data.values():
+                    print('connected device：%s' % uid)
                     pass
+                    # for key, value in self.ip_data.items():
+                    #     if uid == value:
+                    #         self.ipPort_pool[key] = value
+                    #         break
                 else:
                     ip_cmd = 'adb -s ' + uid + ' shell ifconfig wlan0'
                     ip_info = subprocess.Popen(ip_cmd, shell=True, stdout=subprocess.PIPE,
@@ -161,12 +166,9 @@ class WifiConnect:
 
 if __name__ == '__main__':
     # WifiConnect().connect_syc()
-    # a = WifiConnect()
-    # print(a._ip())
-    # print(a.ipPort_pool)
-    lal = {'201bd2fd7d74': '192.168.10.140:5557', 'port': 5561}
+    a = WifiConnect()
+    print('run:%s' % a._ip())
+    print('new:%s' % a.ipPort_pool)
+    # lal = {'201bd2fd7d74': '192.168.10.140:5557', 'port': 5561, 'HMKNW17A14019270': '192.168.10.18:5559'}
     # a.save_ip(lal)
     # a = read(PATH("../data/ip.pickle"))
-    a = 5561
-    if a in lal:
-        print('addd')
