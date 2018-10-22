@@ -24,25 +24,29 @@ class WifiConnect:
     def __init__(self):
         self.ip_data = read(PATH("../data/ip.pickle"))
         self.ipPort_pool = {}
-        self.save_pool = []
+        # self.save_pool = []
         # self.lock = multiprocessing.Lock()
 
     # 多线程无线连接设备
     def connect_syc(self):
         run_pool = self._ip()
         num = len(run_pool) if len(run_pool) < 5 else 5
+        self.ip_data.update(self.ipPort_pool)
 
         if num > 0:
+            print('连接前：%s' % self.ip_data)
             pool = multiprocessing.Pool(processes=num)
             run_list = list(run_pool.values())
-            pool.map(self.connect, run_list)
-            # print(self.ipPort_pool)
-            self.ipPort_pool.update(run_pool)
-            print(self.ipPort_pool)
-            print("start saving")
-            self.save_ip(self.ipPort_pool)
+            print(run_list)
+            # pool.map(self.connect, run_list)
+            # print('连接后：%s' % self.ip_data)
+            # print("start saving")
+            # self.save_ip(self.ip_data)
+        elif len(self.ipPort_pool) > 0 and num == 0:
+            self.save_ip(self.ip_data)
+            print('saved')
         else:
-            print("没有可用的安卓设备")
+            print("no android device needs connect")
 
     # adb无线连接设备
     def connect(self, ip_port):
@@ -94,9 +98,9 @@ class WifiConnect:
         write(data, PATH("../data/ip.pickle"))
 
     def _remove(self, data):
-        for i in self.ip_data:
-            if self.ip_data[i] == data:
-                print('delete %s' % self.ip_data.pop(i))
+        for k, v in self.ip_data.items():
+            if v == data:
+                print('delete %s' % self.ip_data.pop(k))
                 break
 
     # 弃用
@@ -119,14 +123,14 @@ class WifiConnect:
         ip_str = 'inet addr:'
         dev = os.popen(cmd).readlines()
         len_devices = len(dev) - 1
-        port = self.ip_data.get("port", 5555)
+        port = self.ip_data.pop("port", 5555)
+        self.ipPort_pool['port'] = port
 
         if len_devices > 1:
-            self.ipPort_pool['port'] = port
             for d in range(1, len_devices):
                 uid = dev[d].split('\t')[0]
                 if self.ip_data.get(uid):
-                    self.ipPort_pool[uid] = self.ip_data[uid]
+                    self.ipPort_pool[uid] = self.ip_data.pop(uid)
                     print("local saved the equipment：%s" % uid)
                 elif uid in self.ip_data.values():
                     # 已连接的无线设备，删掉ip_data的键值对
@@ -135,7 +139,10 @@ class WifiConnect:
                         if uid == value:
                             self.ipPort_pool[key] = self.ip_data.pop(key)
                             break
+                elif uid.find('.') >= 0:
+                    pass
                 else:
+                    # 新的设备
                     ip_cmd = 'adb -s ' + uid + ' shell ifconfig wlan0'
                     ip_info = subprocess.Popen(ip_cmd, shell=True, stdout=subprocess.PIPE,
                                                stderr=subprocess.PIPE).stdout.readlines()
@@ -147,28 +154,28 @@ class WifiConnect:
                             print('ipPort')
                             self.ipPort_pool[uid] = ip_port
                             port += 2
-                            if d == len_devices - 1:
-                                self.ipPort_pool["port"] = port
-                                #     self.ip_data.append(ip)
-            # run_pool = list(filter(lambda x: x not in exist_pool, self.ip_data))
-            # 筛选设备
-            run_pool = {}
-            for run in self.ip_data:
-                if run not in self.ipPort_pool:
-                    run_pool[run] = self.ip_data.get(run)
-            return run_pool
-        else:
-            if len(self.ip_data) > 1:
-                self.ipPort_pool["port"] = self.ip_data.pop('port')
-            run_pool = self.ip_data
-            return run_pool
+                            # run_pool = list(filter(lambda x: x not in exist_pool, self.ip_data))
+                            # 筛选设备
+                            # run_pool = {}
+                            # for run in self.ip_data:
+                            #     if run not in self.ipPort_pool:
+                            #         run_pool[run] = self.ip_data.get(run)
+                            # return run_pool
+                            # else:
+                            # if len(self.ip_data) > 1:
+                            # self.ipPort_pool["port"] = self.ip_data.pop('port')
+        # run_pool = self.ip_data
+        self.ipPort_pool["port"] = port
+        return self.ip_data
 
 
 if __name__ == '__main__':
-    # WifiConnect().connect_syc()
-    a = WifiConnect()
-    print('run:%s' % a._ip())
-    print('new:%s' % a.ipPort_pool)
+    WifiConnect().connect_syc()
+    # a = WifiConnect()
+    # print('run:%s' % a._ip())
+    # print('new:%s' % a.ipPort_pool)
+    # print('ip_data:%s' % a.ip_data)
     # lal = {'201bd2fd7d74': '192.168.10.140:5557', 'port': 5561, 'HMKNW17A14019270': '192.168.10.18:5559'}
+    # lal={}
     # a.save_ip(lal)
     # a = read(PATH("../data/ip.pickle"))

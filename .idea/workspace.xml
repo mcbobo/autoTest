@@ -2,8 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cc36a3b7-fd6b-4f47-a8e3-7106aafcc135" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" afterPath="$PROJECT_DIR$/app_testProject/Report/Report.xlsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" afterPath="$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/ip.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/ip.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app_testProject/data/sum.pickle" afterPath="$PROJECT_DIR$/app_testProject/data/sum.pickle" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -30,12 +33,13 @@
           <file leaf-file-name="wifi_connect.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1">
-                  <caret line="131" column="44" lean-forward="false" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+                <state relative-caret-position="304">
+                  <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
                   <folding>
-                    <element signature="e#2601#2639#0" expanded="false" />
-                    <element signature="e#2678#2825#0" expanded="false" />
-                    <element signature="e#2825#2829#0" expanded="false" />
+                    <element signature="e#2546#2737#0" expanded="false" />
+                    <element signature="e#2788#2826#0" expanded="false" />
+                    <element signature="e#3009#3013#0" expanded="false" />
+                    <element signature="e#5091#5161#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -90,10 +94,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>is_</find>
-      <find>is_t</find>
-      <find>is_ti</find>
-      <find>is_tim</find>
       <find>is_time</find>
       <find>u</find>
       <find>udid</find>
@@ -120,6 +120,10 @@
       <find>i</find>
       <find>ip_data</find>
       <find>ipPort_pool</find>
+      <find>d</find>
+      <find>dev</find>
+      <find>len_devices</find>
+      <find>update</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -569,7 +573,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -794,12 +798,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app_testProject/appiuim_service/wifi_connect.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1">
-          <caret line="131" column="44" lean-forward="false" selection-start-line="131" selection-start-column="44" selection-end-line="131" selection-end-column="44" />
+        <state relative-caret-position="304">
+          <caret line="33" column="45" lean-forward="true" selection-start-line="33" selection-start-column="45" selection-end-line="33" selection-end-column="45" />
           <folding>
-            <element signature="e#2601#2639#0" expanded="false" />
-            <element signature="e#2678#2825#0" expanded="false" />
-            <element signature="e#2825#2829#0" expanded="false" />
+            <element signature="e#2546#2737#0" expanded="false" />
+            <element signature="e#2788#2826#0" expanded="false" />
+            <element signature="e#3009#3013#0" expanded="false" />
+            <element signature="e#5091#5161#0" expanded="false" />
           </folding>
         </state>
       </provider>
