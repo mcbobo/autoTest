@@ -23,6 +23,7 @@ class AppiumServer:
         """
         # for i in range(0, len(self.kwargs)):
         for i in range(0, len(self.kwargs)):
+            print('start_time:%s' % time.time())
             cmd = "appium --session-override  -p %s -bp %s -U %s" % (
                 self.kwargs[i]["port"], self.kwargs[i]["bport"], self.kwargs[i]["udid"])
             # for i in self.kwargs:
@@ -32,6 +33,7 @@ class AppiumServer:
                 t1 = RunServer(cmd)
                 p = Process(target=t1.start())
                 p.start()
+
                 while True:
                     print("--------start_win_server-------------")
                     if self.win_is_runnnig("http://127.0.0.1:" + str(self.kwargs[i]["port"]) + "/wd/hub" + "/status"):
