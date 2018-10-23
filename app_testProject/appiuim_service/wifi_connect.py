@@ -2,7 +2,10 @@
 import os
 import socket
 import multiprocessing
+from multiprocessing import Process
 import subprocess
+import platform
+import time
 
 from common.BasePickle import read, write
 from common.BaseAppiumServer import RunServer
@@ -21,7 +24,6 @@ class WifiConnect:
     ip_data:本地已保存的设备
     """
     lock = multiprocessing.Lock()
-    pool = []
 
     def __init__(self):
         self.ip_data = read(PATH("../data/ip.pickle"))
@@ -105,17 +107,6 @@ class WifiConnect:
                 print('delete %s' % self.ip_data.pop(k))
                 break
 
-    # 弃用
-    # def _ip_port(self, ip_pool):
-    #     port_pool = [x.split(':')[-1] for x in self.ip_data]
-    #     port = int(max(port_pool))
-    #     for i in ip_pool:
-    #         port += 2
-    #         ip_port = i + ':' + str(port)
-    #         self.ipPort_pool.append(ip_port)
-    #
-    #     return self.ipPort_pool
-
     def _ip(self):
         """
         获取设备ip地址
@@ -166,34 +157,75 @@ class WifiConnect:
                             # else:
                             # if len(self.ip_data) > 1:
                             # self.ipPort_pool["port"] = self.ip_data.pop('port')
-        # run_pool = self.ip_data
+                            # run_pool = self.ip_data
         self.ipPort_pool["port"] = port
         return self.ip_data
 
+    def con_sync(self, run_list):
+        """
+        wifi connect
+        """
+        # run_pool = self._ip()
+        # run_list = list(self._ip().values())
 
-def con(ip_port):
-    return WifiConnect().connect(ip_port)
+        for ip_port in run_list:
+            print('start_time:%s' % time.time())
+            temp = ip_port.split(':')
+            port = temp[-1]
+            ip = temp[0]
+            cmd1 = "adb tcpip " + str(port)
+            cmd2 = "adb connect " + ip_port
 
+            if self.check_port(ip, int(port)):
+                subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
+            if platform.system() == "Windows":  # windows下启动server
+                t1 = RunServer(cmd2)
+                p = Process(target=t1.start())
+                p.start()
 
-def con_sync(run_pool):
-    num = len(run_pool) if len(run_pool) < 5 else 5
+                while True:
+                    print("--------start_connect-------------")
+                    if self.device_is_connect(ip_port):
+                        print("-------win_connect_ 成功--------------")
+                        break
+                    else:
+                        print("fail")
+                        break
+            else:
+                status = subprocess.Popen(cmd2, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=1,
+                                          close_fds=True)
+                while True:
+                    info_line = status.stdout.readline().strip().decode()
+                    time.sleep(1)
+                    print("---------start_server----------")
+                    if "connected" in info_line:
+                        print("connected to %s" % ip_port)
+                    else:
+                        print("unable to connect to %s" % ip_port)
+                        self._remove(ip_port)
+                        print("del:%s" % self.ip_data)
 
-    if num > 0:
-        pool = multiprocessing.Pool(processes=num)
-        run_list = list(run_pool.values())
-        pool.map(con, run_list)
-    elif len(run_pool) > 0 and num == 0:
-        print('saved')
-    else:
-        print("no android device needs connect")
+    @staticmethod
+    def device_is_connect(ip_port):
+        cmd = "adb devices"
+        dev_line = subprocess.Popen(cmd, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
+        # print(dev_line)
+        len_devices = len(dev_line) - 1
+        if len_devices > 1:
+            for d in range(1, len_devices):
+                uid = dev_line[d].decode().split('\t')[0]
+                if uid == ip_port:
+                    print("connected to %s" % ip_port)
+                    return True
+            else:
+                print("unable to connect to %s" % ip_port)
+                return False
 
 
 if __name__ == '__main__':
-    ip_data = read(PATH("../data/ip.pickle"))
-    a = WifiConnect(ip_data)
-    a.connect_syc()
-    print('last:%s' % a.ip_data)
-    # connect_sync()
+    # a = WifiConnect()
+    l = ['192.168.10.140:5557', '192.168.10.18:5559']
+    WifiConnect().con_sync(l)
     # a = WifiConnect()
     # print('run:%s' % a._ip())
     # print('new:%s' % a.ipPort_pool)
@@ -202,3 +234,4 @@ if __name__ == '__main__':
     # lal={}
     # a.save_ip(lal)
     # a = read(PATH("../data/ip.pickle"))
+    # a.device_is_connect()
