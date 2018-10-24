@@ -6,9 +6,9 @@ from multiprocessing import Process
 import subprocess
 import platform
 import time
+import threading
 
 from common.BasePickle import read, write
-from common.BaseAppiumServer import RunServer
 
 PATH = lambda p: os.path.abspath(
     os.path.join(os.path.dirname(__file__), p)
@@ -23,7 +23,6 @@ class WifiConnect:
     run_pool:需要无线连接的设备
     ip_data:本地已保存的设备
     """
-    lock = multiprocessing.Lock()
 
     def __init__(self):
         self.ip_data = read(PATH("../data/ip.pickle"))
@@ -34,25 +33,19 @@ class WifiConnect:
     def connect_syc(self):
         run_pool = self._ip()
         num = len(run_pool) if len(run_pool) < 5 else 5
-
+        # print('num:%s' % num)
         if num > 0:
-            print('连接前：%s' % self.ip_data)
-            print('连接前ipPort:%s' % self.ipPort_pool)
             pool = multiprocessing.Pool(processes=num)
             run_list = list(run_pool.values())
-
             pool.map(self.connect, run_list)
-            print('连接后：%s' % self.ip_data)
-            print('连接后ipPort:%s' % self.ipPort_pool)
-            #     self.ip_data.update(self.ipPort_pool)
-            #     # self.save_ip(self.ip_data)
-            # elif len(self.ipPort_pool) > 0 and num == 0:
-            #     self.ip_data.update(self.ipPort_pool)
-            #     self.save_ip(self.ip_data)
-            #     print('saved')
-            # else:
-            #     print("no android device needs connect")
-        print('pool:%s' % self.pool)
+            self.ip_data.update(self.ipPort_pool)
+            self.save_ip(self.ip_data)
+        elif len(self.ipPort_pool) > 1 and num == 0:
+            self.ip_data.update(self.ipPort_pool)
+            self.save_ip(self.ip_data)
+            print('saved')
+        else:
+            print("no android device needs connect")
 
     # adb无线连接设备
     def connect(self, ip_port):
@@ -70,8 +63,8 @@ class WifiConnect:
             print("connected to %s" % ip_port)
         else:
             print("unable to connect to %s" % ip_port)
-            self._remove(ip_port)
-            print("del:%s" % self.ip_data)
+            # self._remove(ip_port)
+            # print("del:%s" % self.ip_data)
 
     @staticmethod
     def check_port(host, port):
@@ -144,7 +137,6 @@ class WifiConnect:
                         if temp.find(ip_str) >= 0:
                             ip = temp[len(ip_str):].split()[0]
                             ip_port = ip + ':' + str(port)
-                            print('ipPort')
                             self.ipPort_pool[uid] = ip_port
                             port += 2
                             # run_pool = list(filter(lambda x: x not in exist_pool, self.ip_data))
@@ -161,6 +153,7 @@ class WifiConnect:
         self.ipPort_pool["port"] = port
         return self.ip_data
 
+    # slowly,bad
     def con_sync(self, run_list):
         """
         wifi connect
@@ -176,10 +169,10 @@ class WifiConnect:
             cmd1 = "adb tcpip " + str(port)
             cmd2 = "adb connect " + ip_port
 
-            if self.check_port(ip, int(port)):
-                subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
+            # if self.check_port(ip, int(port)):
+            #     subprocess.Popen(cmd1, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE).stdout.readlines()
             if platform.system() == "Windows":  # windows下启动server
-                t1 = RunServer(cmd2)
+                t1 = RunConnect(cmd1, cmd2, self.check_port(ip, int(port)))
                 p = Process(target=t1.start())
                 p.start()
 
@@ -222,16 +215,30 @@ class WifiConnect:
                 return False
 
 
+class RunConnect(threading.Thread):
+    def __init__(self, cmd1, cmd2, status):
+        threading.Thread.__init__(self)
+        self.cmd1 = cmd1
+        self.cmd2 = cmd2
+        self.status = status
+
+    def run(self):
+        if self.status:
+            os.system(self.cmd1)
+        os.system(self.cmd1)
+
+
 if __name__ == '__main__':
-    # a = WifiConnect()
-    l = ['192.168.10.140:5557', '192.168.10.18:5559']
-    WifiConnect().con_sync(l)
+    a = WifiConnect()
+    # l = ['192.168.10.140:5557', '192.168.10.18:5559']
+    # WifiConnect().con_sync(l)
+    # WifiConnect().connect_syc()
     # a = WifiConnect()
     # print('run:%s' % a._ip())
     # print('new:%s' % a.ipPort_pool)
     # print('ip_data:%s' % a.ip_data)
     # lal = {'201bd2fd7d74': '192.168.10.140:5557', 'port': 5561, 'HMKNW17A14019270': '192.168.10.18:5559'}
-    # lal={}
+    # lal = {}
     # a.save_ip(lal)
     # a = read(PATH("../data/ip.pickle"))
     # a.device_is_connect()
