@@ -111,3 +111,4 @@ if __name__ == '__main__':
     path = r'D:\dr.fone3.2.0.apk'
     # t = AndroidDebugBridge().get_app_info(path)
     # print(t)
+    # print(AndroidDebugBridge.is_screen_on())
