@@ -3,6 +3,7 @@ import yaml
 import logging
 import logging.config
 import os
+import time
 
 CON_LOG = '../config/log.conf'
 logging.config.fileConfig(CON_LOG)
@@ -36,8 +37,27 @@ def appium_desired():
     logging.info('start app...')
     driver = webdriver.Remote('http://' + str(data['ip']) + ':' + str(data['port']) + '/wd/hub', desired_caps)
     driver.implicitly_wait(8)
+
+    driver.keyevent(26)
+    time.sleep(3)
+    print('start_up')
+    driver.keyevent(26)
     return driver
 
 
+def is_screen_on(device=''):
+    if device == '':
+        cmd = 'adb shell dumpsys window policy'
+    else:
+        cmd = 'adb -s ' + device + ' shell dumpsys window policy'
+    screen_awake_value = '    mAwake=true\n'
+    all_list = os.popen(cmd).readlines()
+    if screen_awake_value in all_list:
+        return True
+    else:
+        return False
+
+
 if __name__ == '__main__':
-    pass
+    # appium_desired()
+    print(is_screen_on())

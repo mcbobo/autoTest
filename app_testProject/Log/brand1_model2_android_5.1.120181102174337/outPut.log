@@ -1,0 +1,3 @@
+2018-11-02 17:44:00,292  - INFO - ----  testStatus_失败重连        ----
+2018-11-02 17:44:23,108  - INFO - [CheckPoint_1]: testStatus_用例失败重连过一次，失败原因:执行过程中失败，请检查元素是否存在com.tencent.mm:id/d1w, 
+执行过程中失败，请检查元素是否存在com.tencent.mm:id/d1w, : NG

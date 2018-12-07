@@ -1,12 +1,14 @@
 # -*- coding: utf-8 -*-
-from common.BaseAppiumServer import AppiumServer
-from common.BaseLog import myLog
 import unittest
 from appium import webdriver
 import os
-from common.BaseElementEnmu import Element
-import platform
 import time
+import platform
+
+from common.BaseLog import myLog
+from common.BaseAdb import AndroidDebugBridge
+from common.BaseElementEnmu import Element
+from common.BaseAppiumServer import AppiumServer
 from common.BaseYaml import getYam
 from common.BasePickle import write
 
@@ -47,6 +49,10 @@ def appium_testcase(devices):
     remote = "http://127.0.0.1:" + str(devices["port"]) + "/wd/hub"
     # remote = "http://127.0.0.1:" + "4723" + "/wd/hub"
     driver = webdriver.Remote(remote, desired_caps)
+
+    # 判断屏幕是否亮屏，锁屏则按设备电源键
+    if AndroidDebugBridge.is_screen_on(devices["deviceName"]):
+        driver.keyevent(26)
     return driver
 
 

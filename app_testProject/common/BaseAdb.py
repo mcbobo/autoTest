@@ -88,6 +88,20 @@ class AndroidDebugBridge(object):
         # print(result[4])
         return result[4]
 
+    # 屏幕是否亮屏
+    @staticmethod
+    def is_screen_on(device=''):
+        if device == '':
+            cmd = 'adb shell dumpsys window policy'
+        else:
+            cmd = 'adb -s ' + device + ' shell dumpsys window policy'
+        screen_awake_value = '    mAwake=true\n'
+        all_list = os.popen(cmd).readlines()
+        if screen_awake_value in all_list:
+            return True
+        else:
+            return False
+
 
 if __name__ == '__main__':
     # reuslt = AndroidDebugBridge().attached_devices()
@@ -97,3 +111,4 @@ if __name__ == '__main__':
     path = r'D:\dr.fone3.2.0.apk'
     # t = AndroidDebugBridge().get_app_info(path)
     # print(t)
+    # print(AndroidDebugBridge.is_screen_on())
