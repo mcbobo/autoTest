@@ -11,3 +11,4 @@ set ENV_PATH=%PATH%
 @echo ====current environment2：
 @echo %ENV_PATH%
 pause
+test
