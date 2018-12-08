@@ -102,5 +102,4 @@ cmd /c "aapt"
 echo.
 cmd /c "cnpm install appium-doctor -g"
 cmd /c "appium-doctor"
-echo === please press any key to quit!
-pause>null
+pause
