@@ -6,6 +6,8 @@ import os
 
 def getYam(path):
     try:
+        if isinstance(path, str) is False:
+            path = str(path)
         with open(path, encoding='utf-8') as f:
             x = yaml.load(f)
             return [True, x]
@@ -54,25 +56,37 @@ def getMultiYam(*args):
 
 if __name__ == '__main__':
     import os
+    from test_case.case_manager import Path
 
     PATH = lambda p: os.path.abspath(
         os.path.join(os.path.dirname(__file__), p)
     )
     # print(PATH("../yaml/home/firstOpen.yaml"))
-    t1 = PATH('../yamls/home/t1.yaml')
+    t1 = PATH('../yamls/module.yaml')
     t2 = PATH('../yamls/home/t2.yaml')
     # t2 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\login.yaml'
     # print(getMultiYam(PATH("../yamls/home/firstOpen.yaml")))
-    testinfo = getMultiYam(t1, t2)[1]
-    # print(testinfo['testcase'])
-    # print(testinfo['check'])
-    # if testinfo:
-    # print('yes')
+    testinfo = getMultiYam(t1)
+    print(testinfo[1])
+    suitList = testinfo[1]
+    for suitName in suitList:
+        for caseName in suitList[suitName]:
+            case = dict()
+            pathList = list()
+            for path in suitList[suitName][caseName]:
+                casePath = '../yamls/' + str(suitName) + '/' + path
+                pathList.append(casePath)
+            print(Path(*pathList))
+            case[caseName] = Path(*pathList)
+            print(case)
+# print(testinfo['check'])
+# if testinfo:
+# print('yes')
 
-    # port = str(random.randint(4700, 4900))
-    # bpport = str(random.randint(4700, 4900))
-    # devices = "DU2TAN15AJ049163"
-    #
-    # cmd1 = "appium --session-override  -p %s -bp %s -U %s" % (port, bpport, devices)
-    # print(cmd1)
-    # os.popen(cmd1)
+# port = str(random.randint(4700, 4900))
+# bpport = str(random.randint(4700, 4900))
+# devices = "DU2TAN15AJ049163"
+#
+# cmd1 = "appium --session-override  -p %s -bp %s -U %s" % (port, bpport, devices)
+# print(cmd1)
+# os.popen(cmd1)

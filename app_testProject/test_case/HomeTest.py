@@ -1,8 +1,6 @@
 import os
 import sys
 import unittest
-from PageObject.Home.FirstOpenPage import FirstOpenPage
-from common.BaseYaml import getMultiYam
 from common.BaseSetupDown_new import UpDown
 
 PATH = lambda p: os.path.abspath(
@@ -17,13 +15,13 @@ class HomeTest(UpDown):
         print("testStatus")
         casename = sys._getframe().f_code.co_name
         p1 = PATH('../yamls/home/t1.yaml')
-        p2 = PATH('../yamls/home/t2.yaml')
-        self.template(casename, p1, p2)
+        # p2 = PATH('../yamls/home/t2.yaml')
+        self.template(casename, p1)
 
     @unittest.skip('login')
     def testLogining(self):
         casename = sys._getframe().f_code.co_name
-        path = PATH('../yamls/home/login.yaml')
+        path = PATH('../yamls/home/t1.yaml')
         self.template(casename, path)
 
     # def testReceive(self):

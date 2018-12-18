@@ -1,0 +1,16 @@
+testinfo:
+    - id: test001
+      title: 登录1
+      info: 输入账号
+testcase:
+    - element_info: com.tencent.mm:id/d1w
+      find_type: id
+      operate_type: click
+      info: 登录
+check:
+    - element_info: com.tencent.mm:id/hx
+      find_type: id
+      operate_type: set_value
+      msg: '13726221317'
+      check: default_check
+      info: 输入账号

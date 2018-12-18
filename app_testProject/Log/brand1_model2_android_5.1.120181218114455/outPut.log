@@ -1,0 +1,5 @@
+2018-12-18 11:44:57,894  - INFO - ----  test001_登录_com.tencent.mm:id/d1w_click          ----
+2018-12-18 11:45:21,374  - INFO - ----  testLogining_失败重连        ----
+2018-12-18 11:45:23,869  - INFO - ----  test001_登录_com.tencent.mm:id/d1w_click          ----
+2018-12-18 11:45:47,636  - INFO - [CheckPoint_1]: testLogining_用例失败重连过一次，失败原因:执行过程中失败，请检查元素是否存在com.tencent.mm:id/hx, 
+执行过程中失败，请检查元素是否存在com.tencent.mm:id/hx, : NG
