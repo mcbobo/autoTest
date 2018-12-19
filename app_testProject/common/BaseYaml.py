@@ -43,9 +43,9 @@ def getMultiYam(*args):
             else:
                 info[1]["check"][0]['case_check'] = 1
                 case["testcase"].extend(info[1]["check"])
-            case["testinfo"][0]["title"] += info[1]["testinfo"][0]["title"] + '\n'
-            case["testinfo"][0]["info"] += info[1]["testinfo"][0]["info"] + '\n'
-            case["testinfo"][0]["id"] += info[1]["testinfo"][0]["id"] + '\n'
+            case["testinfo"][0]["title"] += info[1]["testinfo"][0]["title"] + '_'
+            case["testinfo"][0]["info"] += info[1]["testinfo"][0]["info"] + '_'
+            case["testinfo"][0]["id"] += info[1]["testinfo"][0]["id"] + '_'
         return [all(flag), case]
     else:
         return getYam(args[0])
@@ -62,8 +62,6 @@ if __name__ == '__main__':
     # print(PATH("../yaml/home/firstOpen.yaml"))
     t1 = PATH('../yamls/module.yaml')
     t2 = PATH('../yamls/home/t2.yaml')
-    # t2 = r'D:\soft\pyc\test\auto_appium\app_testProject\yamls\home\login.yaml'
-    # print(getMultiYam(PATH("../yamls/home/firstOpen.yaml")))
     testinfo = getMultiYam(t1)
     print(testinfo[1])
     suitList = testinfo[1]
@@ -79,9 +77,6 @@ if __name__ == '__main__':
             for i in case[caseName]:
                 print(i)
             print(case)
-# print(testinfo['check'])
-# if testinfo:
-# print('yes')
 
 # port = str(random.randint(4700, 4900))
 # bpport = str(random.randint(4700, 4900))
