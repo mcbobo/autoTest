@@ -1,9 +1,0 @@
-2018-12-19 11:05:34,279  - INFO - ----  testStatus_失败重连        ----
-2018-12-19 11:05:59,773  - INFO - [CheckPoint_1]: testStatus_用例失败重连过一次，失败原因:执行过程中失败，请检查元素是否存在login.png, 
-执行过程中失败，请检查元素是否存在login.png, : NG
-2018-12-19 11:06:08,438  - INFO - ----  test001_登录1_com.tencent.mm:id/d1w_click          ----
-2018-12-19 11:06:09,862  - INFO - ----  test001_登录1_com.tencent.mm:id/hx_set_value 13726221317        ----
-2018-12-19 11:06:15,212  - INFO - [CheckPoint_2]: testLogin_ : OK
-2018-12-19 11:06:26,499  - INFO - ----  test001_登录1_com.tencent.mm:id/d1w_click          ----
-2018-12-19 11:06:27,363  - INFO - ----  test001_登录1_com.tencent.mm:id/hx_set_value 13542431326        ----
-2018-12-19 11:06:32,677  - INFO - [CheckPoint_3]: testOther_ : OK

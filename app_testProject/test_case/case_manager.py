@@ -7,6 +7,8 @@ from common.BaseStatistics import countDate
 from common.BaseSetupDown_new import UpDown
 from common.BaseYaml import getYam
 
+PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
+
 
 class CaseManager:
     """
@@ -19,7 +21,6 @@ class CaseManager:
         self.devices = devices
 
     def _suite(self):
-        PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
         suitPath = PATH('../yamls/module.yaml')
         suitList = getYam(suitPath)[1]
         suite = unittest.TestSuite()
@@ -31,7 +32,7 @@ class CaseManager:
                 for path in suitList[suitName][caseName]:
                     casePath = '../yamls/' + str(suitName) + '/' + path
                     pathList.append(casePath)
-                case[caseName] = Path(*pathList)
+                case[caseName] = Path(pathList)
             CaseClass = type(suitName, (Module,), case)
             suite.addTest(ParametrizedTestCase.parametrize(CaseClass, param=self.devices))
         # suite.addTest(ParametrizedTestCase.parametrize(HomeTest, param=self.devices))  # 加入测试类
@@ -46,16 +47,9 @@ class CaseManager:
 
 
 class Path:
-    # def __init__(self, *path):
     def __init__(self, path):
-        # l = list()
-        # if len(path) > 1:
-        #     for i in path:
-        #         l.append(os.path.abspath(os.path.join(os.path.dirname(__file__), i)))
-        # else:
-        #     l.append(os.path.abspath(os.path.join(os.path.dirname(__file__), *path)))
-        # self.path = l
-        self.path = os.path.abspath(os.path.join(os.path.dirname(__file__), path))
+        self.path = [PATH(i) for i in path]
+        # self.path = os.path.abspath(os.path.join(os.path.dirname(__file__), path))
 
     def __str__(self):
         return '%s' % self.path
@@ -78,7 +72,7 @@ class ModuleMetaclass(type):
                 mappings[k] = v
         for k in mappings.keys():
             print('caseMethod: %s' % k)
-            attrs[k] = lambda self, value=attrs.pop(k): self.template(k, value)
+            attrs[k] = lambda self, value=attrs.pop(k).path: self.template(k, *value)
         return type.__new__(cls, name, bases, attrs)
 
 

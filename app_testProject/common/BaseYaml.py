@@ -1,13 +1,10 @@
 # -*- coding:utf-8 -*-
 import yaml
 from yaml.scanner import ScannerError
-import os
 
 
 def getYam(path):
     try:
-        if isinstance(path, str) is False:
-            path = str(path)
         with open(path, encoding='utf-8') as f:
             x = yaml.load(f)
             return [True, x]
@@ -56,6 +53,7 @@ def getMultiYam(*args):
 
 if __name__ == '__main__':
     import os
+
     from test_case.case_manager import Path
 
     PATH = lambda p: os.path.abspath(
@@ -76,8 +74,10 @@ if __name__ == '__main__':
             for path in suitList[suitName][caseName]:
                 casePath = '../yamls/' + str(suitName) + '/' + path
                 pathList.append(casePath)
-            print(Path(*pathList))
-            case[caseName] = Path(*pathList)
+            # print(Path(pathList))
+            case[caseName] = Path(pathList).path
+            for i in case[caseName]:
+                print(i)
             print(case)
 # print(testinfo['check'])
 # if testinfo:
