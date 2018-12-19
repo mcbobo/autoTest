@@ -1,0 +1,36 @@
+#testDevice: '127.0.0.1:21503'
+testinfo:
+    - id: test001
+      title: 登录
+      info: 登录成功
+testcase:
+#    - element_info: com.tencent.mm:id/d1w
+#      find_type: id
+#      operate_type: click
+#      info: 登录
+#    - element_info: com.tencent.mm:id/hx
+#      find_type: id
+#      operate_type: send_keys
+#      msg: '13726221317'
+#      info: 输入账号
+    - element_info: login.png
+      find_type: img
+      operate_type: tap
+      info: 点击我
+    - element_info: num.png
+      find_type: img
+      operate_type: tap
+      info: check_img
+#    - element_info: com.huawei.works.knowledge:id/vdr_fav
+#      find_type: id
+#      is_webview: 2 # 切换到native
+#      operate_type: click
+#      info: 点击取消收藏按钮
+
+check:
+   #- element_info: com.tencent.mm:id/hx
+   - element_info: com.tencent.mm:id/hx
+     find_type: id
+     operate_type: click
+     check: default_check
+     info: 验证成功

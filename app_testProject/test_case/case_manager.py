@@ -22,23 +22,18 @@ class CaseManager:
         PATH = lambda p: os.path.abspath(os.path.join(os.path.dirname(__file__), p))
         suitPath = PATH('../yamls/module.yaml')
         suitList = getYam(suitPath)[1]
-
-        # case = dict()
-        # case['testLogin'] = Path('../yamls/home/t1.yaml')
         suite = unittest.TestSuite()
+
         for suitName in suitList:
+            case = dict()
             for caseName in suitList[suitName]:
-                case = dict()
                 pathList = list()
                 for path in suitList[suitName][caseName]:
                     casePath = '../yamls/' + str(suitName) + '/' + path
                     pathList.append(casePath)
-                # casePath = '../yamls/' + str(suitName) + '/' + suitList[suitName][caseName]
-                # case[caseName] = Path()
                 case[caseName] = Path(*pathList)
-                CaseClass = type(suitName, (Module,), case)
-                suite.addTest(ParametrizedTestCase.parametrize(CaseClass, param=self.devices))
-        # suite.addTest(ParametrizedTestCase.parametrize(Module, param=self.devices))
+            CaseClass = type(suitName, (Module,), case)
+            suite.addTest(ParametrizedTestCase.parametrize(CaseClass, param=self.devices))
         # suite.addTest(ParametrizedTestCase.parametrize(HomeTest, param=self.devices))  # 加入测试类
         return suite
 

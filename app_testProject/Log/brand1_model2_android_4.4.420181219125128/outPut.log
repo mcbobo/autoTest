@@ -1,0 +1,9 @@
+2018-12-19 12:51:32,438  - INFO - ----  test001_登录1_com.tencent.mm:id/d1w_click          ----
+2018-12-19 12:51:33,821  - INFO - ----  test001_登录1_com.tencent.mm:id/hx_set_value 13726221317        ----
+2018-12-19 12:51:39,116  - INFO - [CheckPoint_1]: testLogin_ : OK
+2018-12-19 12:52:04,572  - INFO - ----  testLogin_失败重连        ----
+2018-12-19 12:52:29,999  - INFO - [CheckPoint_2]: testLogin_用例失败重连过一次，失败原因:执行过程中失败，请检查元素是否存在login.png, 
+执行过程中失败，请检查元素是否存在login.png, : NG
+2018-12-19 12:52:38,637  - INFO - ----  test001_登录1_com.tencent.mm:id/d1w_click          ----
+2018-12-19 12:52:40,248  - INFO - ----  test001_登录1_com.tencent.mm:id/hx_set_value 13726221317        ----
+2018-12-19 12:52:46,035  - INFO - [CheckPoint_3]: testOther_ : OK

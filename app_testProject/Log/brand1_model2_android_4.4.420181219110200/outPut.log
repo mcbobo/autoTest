@@ -1,0 +1,6 @@
+2018-12-19 11:02:06,906  - INFO - ----  test001_µÇÂ¼1_com.tencent.mm:id/d1w_click          ----
+2018-12-19 11:02:07,761  - INFO - ----  test001_µÇÂ¼1_com.tencent.mm:id/hx_set_value 13726221317        ----
+2018-12-19 11:02:13,066  - INFO - [CheckPoint_1]: testLogin_ : OK
+2018-12-19 11:02:20,485  - INFO - ----  test001_µÇÂ¼1_com.tencent.mm:id/d1w_click          ----
+2018-12-19 11:02:21,824  - INFO - ----  test001_µÇÂ¼1_com.tencent.mm:id/hx_set_value 13542431326        ----
+2018-12-19 11:02:27,086  - INFO - [CheckPoint_2]: testOther_ : OK
