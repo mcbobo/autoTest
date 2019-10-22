@@ -2,7 +2,7 @@ aircv == 1.4.6
 Appium-Python-Client == 0.28
 numpy == 1.15.1
 opencv-python == 3.4.2.17
-Pillow == 5.2.0
+Pillow == 6.2.0
 pytesseract == 0.2.4
 PyYAML == 3.12
 selenium == 3.14.0
